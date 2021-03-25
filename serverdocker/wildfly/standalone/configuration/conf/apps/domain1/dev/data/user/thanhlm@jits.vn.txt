@@ -1,0 +1,1 @@
+{"email":"thanhlm@jits.vn","app":"dev","user_id":"p56855d3np64A70","domain":"domain1","status":"","app_status":"t","full_name":"Thành Lê","lang":"en","branchid":"","branchcd":"","branchname":"","avatar":"","lock_screen_image":"","user_api":"{}","afghkeyindexwj":"thanhlm@jits.vn","afghkeytime":"1568276043513","afghkeyworkflow":"","afghtimewj":"0","afghkeyusercreatewj":""}

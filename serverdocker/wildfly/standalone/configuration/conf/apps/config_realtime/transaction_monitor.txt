@@ -1,0 +1,1 @@
+{"time_base_loading":5000,"x_on_screen":8}

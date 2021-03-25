@@ -1,0 +1,13 @@
+{
+	"learn_sql_title": "d_customerGetByCustomercode",
+	"learn_sql_data": "d_customer",
+	"learn_sql_parameter": "@searchdob_sub, @searchcountry_sub, @searchid_sub, @searchname_sub",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT recid, customercode, dob, countrycode, customerid, uptdt, customername FROM jmidaml.d_customer where dob=? and countrycode=? and customerid=? and customername=?",
+	"learn_sql_query_sub": "",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_customerGetByCustomercode",
+	"AFGHTimeWJ": 1561269909390
+}

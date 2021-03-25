@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"verify": false,
+	"blocked": false,
+	"requestChangePass": true,
+	"user_id": "b26e53e3-a637-46b2-985f-9679b7c2dd68",
+	"full_name": "user0005",
+	"email": "user0005",
+	"AFGHkeyIndexWJ": "user0005",
+	"AFGHkeyTime": 1615351667416
+}

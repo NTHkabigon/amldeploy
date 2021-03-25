@@ -1,0 +1,1 @@
+{"email":"useradmin0001","full_name":"useradmin0001","user_id":"useradmin0001","AFGHkeyIndexWJ":"useradmin0001","AFGHkeyUserCreateWJ":"0ca9ebc5-73c3-4a98-b565-169461b0af32","AFGHkeyTime":1615344521058,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1615344522274,"JWebUI_UserCreate":"0ca9ebc5-73c3-4a98-b565-169461b0af32"}

@@ -1,0 +1,29 @@
+**Mô tả**: 
+
+- Gọi một form từ cấu hình, lấy dữ liệu từ form để hiển thị lên thẻ input của component, có nút để đóng mở form. 
+
+---
+
+**Ứng dụng**:
+ 
+- Gọi form bất kì từ component.
+
+---
+
+**mode**:
+1\. Get dữ liệu từ form
+
+- Chuyển đổi khối dữ liệu theo định dạng: "text @value ..." (Trong đó, text là chuỗi có thể `chuyển ngữ`, @value là dữ liệu lấy từ form".
+
+2\. Set dữ liệu vào form
+
+- Chuyển đổi dữ liệu và hiển thị lại trên form được gọi
+
+3\. Ẩn hiện tiêu đề form
+
+---
+
+** Key**: 
+
+- `delete` để xóa toàn bộ dữ liệu trên form
+-  `enter` để lấy dữ liệu trên form. Đóng form nếu đang mở, mở form nếu đang đóng

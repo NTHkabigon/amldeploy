@@ -1,0 +1,13 @@
+﻿{
+	"learn_sql_title": "Tìm các dòng dữ liệu",
+	"learn_sql_data": "d_customer",
+	"learn_sql_parameter": "@customercode, @customername, @customerid",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT recid, customercode, dob, countrycode, customerid,  to_char(uptdt,'YYYY-MM-DD HH:MI:SS') as uptdt, customername,rtnhit,scanid,rtnstatus FROM jmidaml.d_customer where (UPPER(customercode) like UPPER(?) or UPPER(customername) like UPPER(?) or UPPER(customerid) like UPPER(?)) order by recid DESC",
+	"learn_sql_query_sub": "",
+	"learn_sql_date_verify": "",
+    "dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_customer_searchbyparameter",
+	"AFGHTimeWJ": 1561269909390
+}

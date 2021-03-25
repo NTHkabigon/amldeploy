@@ -1,0 +1,1 @@
+{"cdid":"ATM_CDP","cdname":"HOSTTXN","caption":"Cash-In","cdgrp":"JWEBUI","cdidx":"6","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_CDP","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

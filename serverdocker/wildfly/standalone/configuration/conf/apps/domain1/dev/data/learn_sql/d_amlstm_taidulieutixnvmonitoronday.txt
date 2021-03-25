@@ -1,0 +1,67 @@
+{
+	"learn_sql_title": "Tải dulieu cho monitor",
+	"learn_sql_parameter": "",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "select to_char(a.stt::time, 'HH24:00') as stt,a.timetmp as txtime,
+CASE WHEN sts ='C' AND  timea <>0 THEN 1 ELSE 0 END AS success,CASE WHEN sts ='P' AND  timea <>0 THEN 1 ELSE 0 END AS pending,CASE WHEN sts ='F' AND  timea <>0 THEN 1 ELSE 0 END AS failed, CASE WHEN sts ='T' AND  timea <>0 THEN 1 ELSE 0 END AS timeout
+FROM(
+	SELECT '00:00:00' as stt,'00h' as timetmp,NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	 UNION ALL
+	 SELECT '01:00:00' as stt,'01h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '02:00:00' as stt,'02h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '03:00:00' as stt,'03h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '04:00:00' as stt,'04h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '05:00:00' as stt,'05h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '06:00:00' as stt,'06h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '07:00:00' as stt,'07h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '08:00:00' as stt,'08h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '09:00:00' as stt,'09h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '10:00:00' as stt,'10h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '11:00:00' as stt,'11h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '12:00:00' as stt,'12h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '13:00:00' as stt,'13h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '14:00:00' as stt,'14h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '15:00:00' as stt,'15h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '16:00:00' as stt,'16h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '17:00:00' as stt,'17h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '18:00:00' as stt,'18h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '19:00:00' as stt,'19h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '20:00:00' as stt,'20h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '21:00:00' as stt,'21h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '22:00:00' as stt,'22h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT '23:00:00' as stt,'23h' as timetmp,  NOW()::date as txdt,NOW()::time as txtime,0 as timea, 'P' as sts
+	UNION ALL
+	SELECT to_char(txdt::time, 'HH24:00:00') AS stt, to_char(txdt::time, 'HH24')||'h' as timetmp,txdt::date as txdate,txdt::time as txtime,
+	1 as timea, sts FROM jmidaml.d_amlstm where txdt::date = NOW()::date
+)a  where stt::time<= NOW()::time
+order by stt asc",
+	"learn_sql_query_sub": "",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_amlstm_taidulieutixnvmonitoronday",
+	"AFGHTimeWJ": 1561263635755,
+	"learn_sql_data": "transactionOnDay"
+}

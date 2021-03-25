@@ -1,0 +1,1 @@
+{"cdid":"ATM_TCWR","cdname":"TMN","caption":"ATM Terminal Cash Withdrawal","cdgrp":"JWEBUI","cdidx":"6","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_TCWR","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

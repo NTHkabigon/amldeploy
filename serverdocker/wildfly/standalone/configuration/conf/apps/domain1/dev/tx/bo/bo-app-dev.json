@@ -1,0 +1,44 @@
+{
+	"input": {},
+	"actions": [
+		{
+			"name": "O9",
+			"function": "cis.core.txapi.loginapi_cis",
+			"type": "java",
+			"para": [
+				"dev"
+			],
+			"status": "A",
+			"response": {
+				"true": {
+					"fo": [
+						{
+							"txcode": "#sys:fo-container",
+							"input": {
+								"lang": "loginAppTrue"
+							}
+						}
+					]
+				},
+				"false": {
+					"fo": [
+						{
+							"txcode": "#sys:fo-container",
+							"input": {
+								"lang": "loginAppFalse"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"response": {},
+	"status": "A",
+	"txtype": "bo",
+	"txcode": "bo-app-dev",
+	"version": 8,
+	"updateTime": 1562292754552,
+	"txname": "Đăng nhập dev",
+	"isOld": true
+}

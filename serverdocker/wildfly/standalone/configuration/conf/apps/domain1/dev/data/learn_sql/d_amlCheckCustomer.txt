@@ -1,0 +1,13 @@
+{
+	"learn_sql_title": "Check customer",
+	"learn_sql_data": "d_customer",
+	"learn_sql_parameter": "@customercode, @customername, @countrycode, @dob, @customerid",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT c.recid, c.customercode, c.dob, c.countrycode, c.customerid, c.uptdt, c.customername, c.uniqueno, a.rtnscanid as scanID FROM jmidaml.d_customer c left join jmidaml.d_amlstm a on c.uniqueno = a.uniqueno where c.customercode = ? and c.customername= ? and c.countrycode=? and  c.dob=?  and c.customerid=?",
+	"learn_sql_query_sub": "",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_amlCheckCustomer",
+	"AFGHTimeWJ": 15612699097390
+}

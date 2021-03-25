@@ -1,0 +1,1 @@
+{"admin":["0ca9ebc5-73c3-4a98-b565-169461b0af32","p56855d3np64A70","1a040f81-116b-43b0-aa64-68f5d6b398ab"],"Manager":["0ca9ebc5-73c3-4a98-b565-169461b0af32","useradmin0001"],"Teller":["659d5861-ff3b-44c8-b36c-9d1e65a1ba0f","b82d2aa3-ba1f-47b4-b850-d6c7d55c19ee","d91f780a-fc63-4438-93e2-b68a402ffb5f","ab3ce7b6-8df5-4d55-ba1b-0909782079d0","b26e53e3-a637-46b2-985f-9679b7c2dd68"]}

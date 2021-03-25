@@ -1,0 +1,15 @@
+﻿{
+	"learn_sql_title": "Thêm mới service",
+	"learn_sql_query": "UPDATE jmidaml.d_amlstm SET rtnhit=?, rtnscanid=?, rtnencryptscanid=?, sts=?, char17=?,rtnstatus = ?, updtxdt=CURRENT_TIMESTAMP  WHERE uniqueno=?;",
+	"learn_sql_parameter": "@rtnhit, @rtnscanid, @rtnencryptscanid, @sts, @descs,@rtnstatus ,@uniqueno",
+	"learn_sql_parameter_sub": "@uniqueno",
+	"learn_sql_query_sub": "SELECT recid, username, brcode, sysname, scanoption, uniqueno, searchname, searchcountry, searchdob, searchid, passportverify, securityno1, passexpirydtverify, passexpirydate, securityno2, riskfactors, content, rtnhit, rtnscanid, rtnencryptscanid,rtnstatus, txcode, txdt, updtxdt, txrefid, sts,rtnstatus FROM jmidaml.d_amlstm WHERE uniqueno =?",
+	"learn_sql_data": "d_amlstm",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"learn_sql_workfolow": "d_workflowInsertRequestAPI",
+	"paras_workfolow": "@txcode,@id,*requestmess,@wfdescs",
+	"AFGHkeyIndexWJ": "d_amlstmUpdateOne",
+	"AFGHTimeWJ": 1561266469836
+}

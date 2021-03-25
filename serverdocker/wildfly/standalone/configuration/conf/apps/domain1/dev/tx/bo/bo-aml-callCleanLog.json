@@ -1,0 +1,47 @@
+﻿{
+  "input": {
+    
+  },
+  "actions": [
+    {
+      "name": "Xử lý query",
+      "function": "cis.core.txDev_API.callCleanLog",
+      "type": "java",
+      "para": [],
+      "status": "A",
+      "response": {
+        "true": {
+          "fo": [
+            {
+              "txcode": "#sys:fo-container-true",
+              "input": {
+                
+              }
+            }
+          ]
+        },
+        "false": {
+          "fo": [
+            {
+              "txcode": "#sys:fo-container-false",
+              "input": {
+                
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "response": {
+    
+  },
+  "status": "A",
+  "txtype": "bo",
+  "txcode": "bo-aml-callCleanLog",
+  "version": 2,
+  "updateTime": 158607752030483,
+  "txname": "Thêm statment",
+  "hasRole": "false",
+  "isOld": true
+}

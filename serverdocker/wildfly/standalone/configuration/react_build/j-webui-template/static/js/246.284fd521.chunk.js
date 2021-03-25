@@ -1,0 +1,1 @@
+(this.webpackJsonpframeworkcss=this.webpackJsonpframeworkcss||[]).push([[246],{244:function(s,a,e){s.exports=e.p+"static/media/readme.9af8ac4f.txt"}}]);

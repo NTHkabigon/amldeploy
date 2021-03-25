@@ -1,0 +1,1 @@
+{"cdid":"ATM_PFEE","cdname":"HOSTTXN","caption":"Collect offline fee","cdgrp":"JWEBUI","cdidx":"8","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_PFEE","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

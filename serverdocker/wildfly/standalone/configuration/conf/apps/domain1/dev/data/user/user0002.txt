@@ -1,0 +1,1 @@
+{"email":"user0002","full_name":"user0002","user_id":"b82d2aa3-ba1f-47b4-b850-d6c7d55c19ee","AFGHkeyIndexWJ":"user0002","AFGHkeyUserCreateWJ":"867fd2a9-508f-4fb4-a43d-5f6cf8c0002f","AFGHkeyTime":1615358725913,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1615358726769,"JWebUI_UserCreate":"867fd2a9-508f-4fb4-a43d-5f6cf8c0002f"}

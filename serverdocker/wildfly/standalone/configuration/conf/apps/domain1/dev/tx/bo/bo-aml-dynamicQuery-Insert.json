@@ -1,0 +1,33 @@
+{
+	"input": {},
+	"actions": [
+		{
+			"name": "Xử lý query",
+			"function": "cis.core.txDev_API.dynamicQuery_Insert",
+			"type": "java",
+			"para": [
+				"@learn_sql"
+			],
+			"status": "A",
+			"response": {
+				"_default_": {
+					"fo": [
+						{
+							"txcode": "#sys:fo-container",
+							"input": {}
+						}
+					]
+				}
+			}
+		}
+	],
+	"response": {},
+	"status": "A",
+	"txtype": "bo",
+	"txcode": "bo-aml-dynamicQuery-Insert",
+	"version": 2,
+	"updateTime": 15863077503083,
+	"txname": "Thêm statment",
+	"hasRole": "false",
+	"isOld": true
+}

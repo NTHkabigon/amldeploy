@@ -1,0 +1,1 @@
+{"cdid":"ATM_IFTF","cdname":"TMN","caption":"ATM Terminal Fund Transfer Intrabank","cdgrp":"JWEBUI","cdidx":"8","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_IFTF","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

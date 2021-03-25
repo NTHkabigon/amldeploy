@@ -1,0 +1,65 @@
+# Hướng dẫn thiết kế form
+
+---
+## 1\. Mở giao diện thiết kế form từ menu
+
+![](https://i.imgur.com/W7JmF9j.png?1)
+
+* > **Cách mở:** 
+> **Mã form dùng tạm: **id của form.
+> **Tên form: **tên hiển thị của form.
+> **Thông tin thêm:** Mô tả thêm về chức năng của form.
+
+* Chọn `Thêm Layout` để tạo `Layout` mới.
+![](https://i.imgur.com/Txexhd3.png)
+
+
+---
+## 2\.Giới thiệu các thành phần của form
+![](https://i.imgur.com/SoSzSEe.png)
+* Một `form` gồm có 3 thành phần chính: `Layout`, `View`, `Component`.
+* Trong một `from` có thể chứa nhiều `Layout`, trong `Layout` có thể chứa nhiều `View` và trong `View` có thể chứa nhiều `Component`.
+
+---
+## 3\.Thành phần layout
+![](https://i.imgur.com/GdguL9I.png)
+
+* `...` để di chuyển `Layout`  trong form.
+* `...` Thêm `Layout` mới trong form. 
+* `...` Mở cấu hình `Layout` .
+
+* * > **Tên layout**: Tên hiển thị của `Layout`.
+			> **Hướng dẫn**: Mô tả thêm cho `Layout`.
+			> **Class** : thêm class cho layout.
+
+* `...` xóa `Layout`. Gõ `yes` để xác nhận xóa. 
+
+---
+## 4\.Thành phần view
+![](https://i.imgur.com/xO8cCsK.png)
+
+* `...` để di chuyển `View` trong `layout`.
+* `...` Thêm `View` mới trong `layout`. 
+* `...` Mở cấu hình `View` .
+
+* * > **Tên View**: Tên hiển thị của `View`.
+			> **Code**: Mã `code` để thu thập dữ liệu các component. Khi thu thập dữ liệu, các `component` có cùng mã `code` với `View` sẽ được thu thập dữ liệu.
+			> **Là Tab** : Định dạng có hiển thị dạng `tab` trên `Layout` hay không.
+
+* `...` xóa `View`. Gõ `yes` để xác nhận xóa. 
+
+---
+## 5\.Thành phần component
+![](https://i.imgur.com/bRBigBT.png)
+* `...` để di chuyển `Component` trong `View`.
+* `...` Thêm `Component` mới trong `View`. 
+* `...` Mở cấu hình `Component` 
+
+* *  ``` 
+Với mỗi loại `component` có một định dạng cấu hình khác nhau. Ở phần này, vui đọc tài liệu hướng dẫn của từng `component` để được hướng dẫn về cấu hình `component`. 
+```
+
+* `...` chọn loại `component`. 
+* `...` xóa `component`. Gõ `yes` để xác nhận xóa. 
+
+---

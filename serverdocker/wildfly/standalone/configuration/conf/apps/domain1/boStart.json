@@ -1,0 +1,34 @@
+[
+	{
+		"title": "Create static variable bostart",
+		"app": "sys",
+		"bo": {
+			"bo": [
+				{
+					"txcode": "#sys:bo-startBuild-context",
+					"input": {
+						"procname_GetJob": "op9m.getdatascheduleforprocess()",
+						"repeat_GetJob": "10",
+						"repeat_ExJob": "10",
+						"timeOutThread": 60,
+						"procmame_CleanLog": "jmidaml.cleanlog(?)"
+					}
+				}
+			]
+		}
+	},
+	{
+		"title": "Create static variable bostart",
+		"app": "dev",
+		"bo": {
+			"bo": [
+				{
+					"txcode": "#sys:bo-startBuild-context",
+					"input": {
+						"sizePoolConnectDB": 50
+					}
+				}
+			]
+		}
+	}
+]

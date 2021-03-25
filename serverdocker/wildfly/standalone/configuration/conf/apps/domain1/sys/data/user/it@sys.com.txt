@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"verify": false,
+	"blocked": false,
+	"requestChangePass": true,
+	"user_id": "1a040f81-116b-43b0-aa64-68f5d6b398ab",
+	"full_name": "it",
+	"email": "it@sys.com",
+	"AFGHkeyIndexWJ": "it@sys.com",
+	"AFGHkeyTime": 1615869745430
+}

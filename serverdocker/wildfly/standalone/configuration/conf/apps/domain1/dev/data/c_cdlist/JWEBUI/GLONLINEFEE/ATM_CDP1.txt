@@ -1,0 +1,1 @@
+{"cdid":"ATM_CDP","cdname":"GLONLINEFEE","caption":"Cash-In","cdgrp":"JWEBUI","cdidx":"6","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_CDP1","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

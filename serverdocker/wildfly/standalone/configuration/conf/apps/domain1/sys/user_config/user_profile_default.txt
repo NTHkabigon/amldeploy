@@ -1,0 +1,1 @@
+{"list_lang_config":[{"key":"vi","view":"Vietnamese","img":"../rs/global/img/vietnam.png"},{"key":"en","view":"English","selected":true,"img":"../rs/global/img/uk.png"}]}

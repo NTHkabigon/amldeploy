@@ -1,0 +1,13 @@
+{
+	"learn_sql_title": "Tải tất cả data của d_amlstm",
+	"learn_sql_parameter": "",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT recid, id,username,brcode,scanoption, customercode, customercode, txcode, TO_CHAR(txdt,'YYYY-MM-DD HH24:MI:SS') as txdt, sts, uniqueno, searchname, searchcountry , searchdob , searchid, rtnhit, rtnscanid, rtnencryptscanid, rtnstatus FROM jmidaml.d_amlstm order by txdt DESC;",
+	"learn_sql_query_sub": "",
+	"learn_sql_data": "d_amlstm",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_amlstmLoadAllToForm",
+	"AFGHTimeWJ": 1561263635755
+}

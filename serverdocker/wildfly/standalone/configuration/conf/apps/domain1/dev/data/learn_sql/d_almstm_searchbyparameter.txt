@@ -1,0 +1,13 @@
+﻿{
+	"learn_sql_title": "Tìm các dòng dữ liệu",
+	"learn_sql_data": "d_amlstm",
+	"learn_sql_parameter": "@sysname, @uniqueno, @searchname,@searchid, @id,@customercode",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT recid, id,username,brcode,scanoption, customercode, txcode, txdt, sts, uniqueno, searchname, searchcountry , searchdob , searchid, rtnhit, rtnscanid, rtnencryptscanid, rtnstatus FROM jmidaml.d_amlstm WHERE (UPPER(sysname) like UPPER(?) or UPPER(uniqueno) like UPPER(?) or UPPER(searchname) like UPPER(?) or UPPER(searchid) like UPPER(?) or UPPER(id) like UPPER(?) or UPPER(customercode) like UPPER(?) ) ORDER BY txdt DESC",
+	"learn_sql_query_sub": "",
+	"learn_sql_date_verify": "",
+    "dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_almstm_searchbyparameter",
+	"AFGHTimeWJ": 1561269909390
+}

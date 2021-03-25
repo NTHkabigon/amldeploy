@@ -1,0 +1,13 @@
+{
+	"learn_sql_title": "Xem 1 dữ liệu",
+	"learn_sql_data": "d_amlstm",
+	"learn_sql_parameter": "@uniqueno",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT recid, username, brcode, sysname, scanoption, uniqueno, searchname, searchcountry, searchdob, searchid, passportverify, securityno1, passexpirydtverify, passexpirydate, securityno2, riskfactors, content, rtnhit, rtnscanid, rtnencryptscanid, txcode, TO_CHAR(txdt,'YYYY-MM-DD HH24:MI:SS') as txdt, updtxdt, txrefid, sts, id,txtype, customercode, rtnstatus,  date01 as frdt, date02 as todt FROM jmidaml.d_amlstm where uniqueno = ?",
+	"learn_sql_query_sub": "",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_amlstmViewOne",
+	"AFGHTimeWJ": 1561269909390
+}

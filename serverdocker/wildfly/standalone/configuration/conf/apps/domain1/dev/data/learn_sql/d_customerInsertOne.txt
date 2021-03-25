@@ -1,0 +1,13 @@
+﻿{
+	"learn_sql_title": "d_customerInsertOne",
+	"learn_sql_query": "INSERT INTO jmidaml.d_customer(customercode, dob, countrycode, customerid, uptdt, customername)	VALUES (?, ?, ?, ?,CURRENT_TIMESTAMP, ?);",
+	"learn_sql_parameter": "@customercode_sub,@searchdob_sub, @searchcountry_sub, @searchid_sub, @searchname_sub",
+	"learn_sql_parameter_sub": "#pk_col",
+	"learn_sql_query_sub": "SELECT recid, customercode, dob, countrycode, customerid, uptdt, customername, rtnhit FROM jmidaml.d_customer WHERE recid =?",
+	"learn_sql_data": "d_customer",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_customerInsertOne",
+	"AFGHTimeWJ": 1561266469836
+}

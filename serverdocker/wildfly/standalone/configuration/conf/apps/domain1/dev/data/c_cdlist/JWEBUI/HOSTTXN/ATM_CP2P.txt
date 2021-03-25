@@ -1,0 +1,1 @@
+{"cdid":"ATM_CP2P","cdname":"HOSTTXN","caption":"P2P Credit","cdgrp":"JWEBUI","cdidx":"5","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_CP2P","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

@@ -1,0 +1,13 @@
+﻿{
+  "learn_sql_title": "Thêm mới",
+  "learn_sql_query": "INSERT INTO jmidaml.d_workflow(txcode, txdt, id, requestmess, status, wfdescs) VALUES (?, CURRENT_TIMESTAMP,?,?,'C',?)",
+  "learn_sql_parameter": "@txcode, @id, @requestmess,@wfdescs",
+  "learn_sql_parameter_sub": "",
+  "learn_sql_query_sub": "",
+  "learn_sql_date_verify": "",
+  "dynamic_update": "",
+  "validation_para_api": "",
+  "learn_sql_data": "d_workflow",
+  "AFGHkeyIndexWJ": "d_workflowInsertRequestAPI",
+  "AFGHTimeWJ": 1561266469836
+}

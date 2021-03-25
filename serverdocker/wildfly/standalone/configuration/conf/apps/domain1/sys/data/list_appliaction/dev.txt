@@ -1,0 +1,32 @@
+{
+	"list_appliaction_name": "JMiddleware",
+	"list_appliaction_des": "For AML",
+	"list_appliaction_img": "../rs/global/img/aml.png",
+	"list_appliaction_id": "dev",
+	"list_appliaction_bo": "bo-app-dev",
+	"list_appliaction_order": "3",
+	"AFGHkeyIndexWJ": "dev",
+	"AFGHkeyTime": 1567504514322,
+	"AFGHkeyWorkFlow": "",
+	"AFGHTimeWJ": 1567504514326,
+	"configTemplate": {
+		"mobi": {
+			"isFwCss": false,
+			"template": "malibu",
+			"screen_working": "desktop_hub",
+			"theme": "Majorelle_Blue"
+		},
+		"desktop": {
+			"isFwCss": false,
+			"template": "malibu",
+			"screen_working": "desktop_hub",
+			"theme": "Majorelle_Blue"
+		},
+		"tablet": {
+			"isFwCss": false,
+			"template": "malibu",
+			"screen_working": "desktop_hub",
+			"theme": "Majorelle_Blue"
+		}
+	}
+}

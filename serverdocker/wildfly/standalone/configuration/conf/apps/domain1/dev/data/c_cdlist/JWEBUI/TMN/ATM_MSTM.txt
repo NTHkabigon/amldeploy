@@ -1,0 +1,1 @@
+{"cdid":"ATM_MSTM","cdname":"TMN","caption":"ATM Mini-statement","cdgrp":"JWEBUI","cdidx":"1","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_MSTM","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

@@ -1,0 +1,1 @@
+{"cdid":"ATM_FTF","cdname":"TMN","caption":"ATM Terminal Fund Transfer Owned Account","cdgrp":"JWEBUI","cdidx":"7","cdval":"","flag":"","visible":"","AFGHkeyIndexWJ":"ATM_FTF","AFGHkeyTime":1578537958705,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1578537958744}

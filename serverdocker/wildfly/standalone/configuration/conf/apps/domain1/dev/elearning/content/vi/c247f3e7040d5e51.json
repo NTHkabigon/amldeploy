@@ -1,0 +1,61 @@
+# Hướng dẫn thiết kế jTagInput
+---
+## 1. Tạo mới component
+> Đọc phần `5.Thành phần component` của `Đào tạo-Thiết kế Form`.
+
+---
+## 2. Cấu hình
+### 2.1 Cấu hình cho get/set
+![Imgur](https://i.imgur.com/iONfGo1.png)
+> `#1` : định dạng `khoá` cho phương thức get.
+`#2` : định dạng `khoá` cho phương thức set.
+`#3` : tiêu đề của component.
+``` 
+Note: Thông thường cấu hình cho cả set lẫn get nên chọn chung một khoá.
+```
+
+### 2.2 Cấu hình cho chức năng search
+![Imgur](https://i.imgur.com/afjQ09b.png)
+Có 2 mode  :
+`- Chọn dùng search`
+![Imgur](https://i.imgur.com/0KEfmq7.png)
+
+`- Chọn không dùng`
+![Imgur](https://i.imgur.com/DCTKWkc.png)
+
+### 2.3 Cấu hình cho dữ liệu hiển thị ở lưới
+Có 4 mode để lựa chọn cho việc hiển thị dữ liệu ở phần `Kho dữ liệu` :
+![Imgur](https://i.imgur.com/ArPe9Tw.png)
+> `- Query` : dùng cho trường hợp cần lấy dữ liệu đầu ra với câu query có điều kiện.
+`- Json` : lấy dữ liệu đầu vào là kiểu Json.
+`- Cdlist` : lấy dữ liệu từ bảng cdlist.
+`- No Query` : chỉ cần nhập tên table và dữ liệu hiển thị (hiện tại mới chỉ sử dụng được cho 1 table).
+```
+Note: nếu dữ liệu đầu ra không cần điều kiện để hiển thị thì nên dùng No Query.
+```
+
+### 2.4 Cấu hình dữ liệu cho phương thức get
+Để định dạng giá trị cho phương thức get, vô phần `Cấu hình dữ liệu` :
+![Imgur](https://i.imgur.com/PfqPLWQ.png)
+> `- Cấu hình dữ liệu` : lựa chọn giá trị một field của table.
+`- Dấu phân cách` : tuỳ vào mong muốn của người sử dụng.
+```
+NOTE: dấu phân cách đang được để mặc định là ";". Thông thường giá trị trả về nên sử dụng field ID.
+```
+
+**Ví dụ:** lựa chọn `table_A.col_id` là giá trị trả về cho phương thước get.
+--> key : "a_1;a_2;a_3; ... ;a_n"
+
+### 2.5 Định dạng kiểu cho lưới hiển thị
+Để định dạng kiểu hiển thị cho lưới, vô phần `Hiển thị lưới dữ liệu` :
+![Imgur](https://i.imgur.com/oAoXbIw.png)
+**Có 2 mode hiển thị** :
+> `- Đa cột` : dữ liệu hiển thị sẽ phụ thuộc vào cấu hình ở `Kho dữ liệu` .
+`- Trộn cột` : quy định cách hiển thị ở phần `Cách hiển thị dữ liệu`.
+![Imgur](https://i.imgur.com/sM2lA8N.png)
+```
+NOTE: ở mode trộn cột, field cần lấy phải đặt sau dấu "@" và cách nhau bởi dấu " ".
+```
+
+**Ví dụ:** 123 là id của abc.
+--> Cấu hình ở mục `Cách hiển thị dữ liệu` như sau: `@table_A.col_id` là id của `@table_A.col_name`.

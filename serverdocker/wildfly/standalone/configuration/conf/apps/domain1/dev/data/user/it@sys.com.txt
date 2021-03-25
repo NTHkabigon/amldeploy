@@ -1,0 +1,1 @@
+{"email":"it@sys.com","full_name":"it","user_id":"1a040f81-116b-43b0-aa64-68f5d6b398ab","AFGHkeyIndexWJ":"it@sys.com","AFGHkeyUserCreateWJ":"0ca9ebc5-73c3-4a98-b565-169461b0af32","AFGHkeyTime":1615869803160,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1615869802492,"JWebUI_UserCreate":"0ca9ebc5-73c3-4a98-b565-169461b0af32"}

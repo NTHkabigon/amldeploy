@@ -1,0 +1,871 @@
+2021-03-19 10:34:40,215 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+2021-03-19 10:34:42,115 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2021-03-19 10:34:42,124 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2021-03-19 10:34:42,278 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 19.1.0.Final (WildFly Core 11.1.1.Final) starting
+2021-03-19 10:34:42,281 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	file.encoding = Cp1252
+	file.separator = \
+	java.awt.headless = true
+	java.class.path = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\jboss-modules.jar;C:\Program Files\Java\jdk-14.0.1\lib\jrt-fs.jar
+	java.class.version = 58.0
+	java.home = C:\Program Files\Java\jdk-14.0.1
+	java.io.tmpdir = C:\Users\LAPTOP~1\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-14.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Quest Shared\instantclient_11_2;D:\app\SeolSang\product\11.2.0\dbhome_1\bin;C:\Program Files\instantclient_12_2;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\LaptopNCT\AppData\Local\Microsoft\WindowsApps;C:\Users\LaptopNCT\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\PuTTY\;C:\Program Files\PostgreSQL\12\bin\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\LaptopNCT\AppData\Local\Microsoft\WindowsApps;;C:\Users\LaptopNCT\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LaptopNCT\AppData\Roaming\npm;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 127.0.0.1
+	jboss.bind.address.management = 127.0.0.1
+	jboss.home.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly
+	jboss.host.name = 5cg822777h
+	jboss.modules.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 5cg822777h
+	jboss.qualified.host.name = 5cg822777h
+	jboss.server.base.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone
+	jboss.server.config.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration
+	jboss.server.data.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\data
+	jboss.server.deploy.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\data\content
+	jboss.server.log.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\log
+	jboss.server.name = 5cg822777h
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration\logging.properties
+	module.path = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\modules
+	org.jboss.boot.log.file = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 18 at localhost
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-14.0.1\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\modules org.jboss.as.standalone -b 127.0.0.1 --server-config=standalone.xml -Djboss.server.base.dir=D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\bin
+	user.home = C:\Users\LaptopNCT
+	user.language = en
+	user.name = SeolSang
+	user.script = 
+	user.timezone = Asia/Bangkok
+	user.variant = 
+2021-03-19 10:34:42,284 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=JBossTools: WildFly 18 at localhost -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\log\boot.log -Dlogging.configuration=file:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration\logging.properties -Djboss.home.dir=D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly -Dorg.jboss.logmanager.nocolor=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=127.0.0.1 -Dfile.encoding=Cp1252 
+2021-03-19 10:34:46,411 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.4.Final
+2021-03-19 10:34:47,695 WARN  [io.undertow] (Controller Boot Thread) UT005060: Predicate exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json)(;.*)?', value=%{o,Content-Type}, full-match=true] uses old style square braces to define predicates, which will be removed in a future release. predicate[value] should be changed to predicate(value)
+2021-03-19 10:34:47,696 WARN  [io.undertow] (Controller Boot Thread) UT005060: Predicate exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json)(;.*)?', value=%{o,Content-Type}, full-match=true] uses old style square braces to define predicates, which will be removed in a future release. predicate[value] should be changed to predicate(value)
+2021-03-19 10:34:48,977 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-19 10:34:49,040 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 33) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-19 10:34:49,044 WARN  [io.undertow] (ServerService Thread Pool -- 33) UT005060: Predicate exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json)(;.*)?', value=%{o,Content-Type}, full-match=true] uses old style square braces to define predicates, which will be removed in a future release. predicate[value] should be changed to predicate(value)
+2021-03-19 10:34:49,046 WARN  [io.undertow] (ServerService Thread Pool -- 33) UT005060: Predicate exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json)(;.*)?', value=%{o,Content-Type}, full-match=true] uses old style square braces to define predicates, which will be removed in a future release. predicate[value] should be changed to predicate(value)
+2021-03-19 10:34:49,144 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found jMaster_EAR.ear in deployment directory. To trigger deployment create a file called jMaster_EAR.ear.dodeploy
+2021-03-19 10:34:49,214 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-19 10:34:49,237 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.7.Final
+2021-03-19 10:34:49,246 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.7.Final
+2021-03-19 10:34:49,287 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2021-03-19 10:34:49,316 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-19 10:34:49,326 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2021-03-19 10:34:49,343 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2021-03-19 10:34:49,434 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2021-03-19 10:34:49,399 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-19 10:34:49,544 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2021-03-19 10:34:49,482 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-19 10:34:49,467 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+2021-03-19 10:34:49,564 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2021-03-19 10:34:49,567 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2021-03-19 10:34:49,569 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2021-03-19 10:34:49,597 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2021-03-19 10:34:49,614 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-19 10:34:49,721 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.1.0.Final starting
+2021-03-19 10:34:50,025 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.2.Final
+2021-03-19 10:34:50,080 WARN  [io.undertow] (ServerService Thread Pool -- 75) UT005060: Predicate exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json)(;.*)?', value=%{o,Content-Type}, full-match=true] uses old style square braces to define predicates, which will be removed in a future release. predicate[value] should be changed to predicate(value)
+2021-03-19 10:34:50,084 WARN  [io.undertow] (ServerService Thread Pool -- 75) UT005060: Predicate exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json)(;.*)?', value=%{o,Content-Type}, full-match=true] uses old style square braces to define predicates, which will be removed in a future release. predicate[value] should be changed to predicate(value)
+2021-03-19 10:34:50,087 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-19 10:34:50,119 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly/standalone/configuration/react_build/j-webui-login' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-19 10:34:50,472 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly/standalone/configuration/react_build/j-webui-stable' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-19 10:34:50,479 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly/standalone/configuration/react_build/j-webui-template' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-19 10:34:50,480 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly/standalone/configuration/react_build/wiz_rs' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-19 10:34:50,482 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly/standalone/configuration/react_build/react-app' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-19 10:34:50,561 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-19 10:34:50,559 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2021-03-19 10:34:50,955 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2021-03-19 10:34:50,969 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2021-03-19 10:34:50,969 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2021-03-19 10:34:51,019 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2021-03-19 10:34:51,021 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2021-03-19 10:34:51,025 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.17.Final
+2021-03-19 10:34:51,171 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-19 10:34:51,181 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8444
+2021-03-19 10:34:51,257 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-19 10:34:53,844 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2021-03-19 10:34:53,858 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-19 10:34:53,863 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\deployments
+2021-03-19 10:34:53,876 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "jMaster_EAR.ear" (runtime-name: "jMaster_EAR.ear")
+2021-03-19 10:34:54,024 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-19 10:34:54,981 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2021-03-19 10:34:58,653 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0207: Starting subdeployment (runtime-name: "JWebUI_WAR.war")
+2021-03-19 10:34:58,979 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for jwebuiCore
+2021-03-19 10:34:58,981 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for jMaster_Core
+2021-03-19 10:34:58,982 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for JWebUI_Core_JPA
+2021-03-19 10:35:00,465 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 79) WFLYJPA0003: Starting Persistence Unit Service 'jMaster_EAR.ear#JWebUI_Core_JPA'
+2021-03-19 10:35:00,772 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+2021-03-19 10:35:01,020 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'jMaster_EAR.ear#jwebuiCore'
+2021-03-19 10:35:01,026 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'jMaster_EAR.ear#jMaster_Core'
+2021-03-19 10:35:01,059 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 80) HHH000204: Processing PersistenceUnitInfo [
+	name: jwebuiCore
+	...]
+2021-03-19 10:35:01,059 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 81) HHH000204: Processing PersistenceUnitInfo [
+	name: jMaster_Core
+	...]
+2021-03-19 10:35:01,300 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 80) HHH000412: Hibernate Core {5.3.15.Final}
+2021-03-19 10:35:01,302 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 80) HHH000206: hibernate.properties not found
+2021-03-19 10:35:01,413 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2021-03-19 10:35:01,415 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+2021-03-19 10:35:01,470 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0004: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.2)
+2021-03-19 10:35:01,474 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2021-03-19 10:35:01,507 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_com.mysql.jdbc.Driver_5_1
+2021-03-19 10:35:01,508 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_oracle.jdbc.OracleDriver_11_2
+2021-03-19 10:35:01,508 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
+2021-03-19 10:35:01,511 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_org.postgresql.Driver_42_2
+2021-03-19 10:35:01,511 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear
+2021-03-19 10:35:01,567 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+2021-03-19 10:35:01,743 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 81) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2021-03-19 10:35:01,913 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'jMaster_EAR.ear#jwebuiCore'
+2021-03-19 10:35:01,969 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'jMaster_EAR.ear#jMaster_Core'
+2021-03-19 10:35:02,261 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 80) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-19 10:35:02,261 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 81) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-19 10:35:02,269 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 80) HHH000431: Unable to determine H2 database version, certain features may not work
+2021-03-19 10:35:02,269 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 81) HHH000431: Unable to determine H2 database version, certain features may not work
+2021-03-19 10:35:02,373 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 80) Envers integration enabled? : true
+2021-03-19 10:35:02,357 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 81) Envers integration enabled? : true
+2021-03-19 10:35:02,578 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 80) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2021-03-19 10:35:02,578 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 81) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2021-03-19 10:35:02,687 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 80) UT026003: Adding annotated server endpoint class master.gateway.webUiSocket for path /webchannel/webuisocket/{session_webui}
+2021-03-19 10:35:03,665 INFO  [stdout] (ServerService Thread Pool -- 80) System.out.println("vvvvvvvvvvvvvvvvvvvvvvvv|-> SYSTEM START <-|vvvvvvvvvvvvvvvvvvvvvvvv");
+2021-03-19 10:35:03,666 INFO  [stdout] (ServerService Thread Pool -- 80) |->Java Version:14.0.1
+2021-03-19 10:35:03,666 INFO  [stdout] (ServerService Thread Pool -- 80) ==========|-> LOADING REACT TEMPLATE
+2021-03-19 10:35:03,701 INFO  [stdout] (ServerService Thread Pool -- 80) |-> React template ok
+2021-03-19 10:35:03,702 INFO  [stdout] (ServerService Thread Pool -- 80) ==========|-> LOADING REACT LOGIN
+2021-03-19 10:35:03,741 INFO  [stdout] (ServerService Thread Pool -- 80) |-> React Login ok
+2021-03-19 10:35:03,742 INFO  [stdout] (ServerService Thread Pool -- 80) ====* parameter context *=====
+2021-03-19 10:35:03,743 INFO  [stdout] (ServerService Thread Pool -- 80) server ip: 180.77.15.107
+2021-03-19 10:35:03,743 INFO  [stdout] (ServerService Thread Pool -- 80) server port: 8444
+2021-03-19 10:35:03,743 INFO  [stdout] (ServerService Thread Pool -- 80) template_host_dev: http://127.0.0.1:8444/fwcss
+2021-03-19 10:35:03,743 INFO  [stdout] (ServerService Thread Pool -- 80) ===============System start parameter static===================
+2021-03-19 10:35:03,744 INFO  [stdout] (ServerService Thread Pool -- 80) ================BEGIN RUN BO START================
+2021-03-19 10:35:03,755 INFO  [stdout] (ServerService Thread Pool -- 80) ==============App:sys==============
+2021-03-19 10:35:03,756 INFO  [stdout] (ServerService Thread Pool -- 80) Running:Create static variable bostart
+2021-03-19 10:35:03,773 INFO  [stdout] (ServerService Thread Pool -- 80) Create app sys
+2021-03-19 10:35:03,933 INFO  [stdout] (ServerService Thread Pool -- 80) Co BO INPUT {"procname_GetJob":"op9m.getdatascheduleforprocess()","repeat_GetJob":"10","repeat_ExJob":"10","timeOutThread":60,"procmame_CleanLog":"jmidaml.cleanlog(?)"}
+2021-03-19 10:35:03,934 INFO  [stdout] (ServerService Thread Pool -- 80) Push Info sys complete
+2021-03-19 10:35:03,934 INFO  [stdout] (ServerService Thread Pool -- 80) ========> Start Create Variable for app Dev
+2021-03-19 10:35:03,934 INFO  [stdout] (ServerService Thread Pool -- 80) Scheduler can not create because don't have para for BO-Start
+2021-03-19 10:35:03,938 INFO  [stdout] (ServerService Thread Pool -- 80) Result BO:{"fo":[]}
+2021-03-19 10:35:03,939 INFO  [stdout] (ServerService Thread Pool -- 80) ==============App:dev==============
+2021-03-19 10:35:03,939 INFO  [stdout] (ServerService Thread Pool -- 80) Running:Create static variable bostart
+2021-03-19 10:35:03,940 INFO  [stdout] (ServerService Thread Pool -- 80) Create app dev
+2021-03-19 10:35:04,094 INFO  [stdout] (ServerService Thread Pool -- 80) Co BO INPUT {"sizePoolConnectDB":50}
+2021-03-19 10:35:04,094 INFO  [stdout] (ServerService Thread Pool -- 80) Push Info dev complete
+2021-03-19 10:35:04,095 INFO  [stdout] (ServerService Thread Pool -- 80) Para input: {"sizePoolConnectDB":50}
+2021-03-19 10:35:07,993 INFO  [stdout] (ServerService Thread Pool -- 80) Create connection in pool complete: 50
+2021-03-19 10:35:07,993 INFO  [stdout] (ServerService Thread Pool -- 80) Create Variable for schedule complete
+2021-03-19 10:35:07,996 INFO  [stdout] (ServerService Thread Pool -- 80) Result BO:{"fo":[]}
+2021-03-19 10:35:07,996 INFO  [stdout] (ServerService Thread Pool -- 80) ----------------END RUN BO START----------------
+2021-03-19 10:35:07,997 INFO  [stdout] (ServerService Thread Pool -- 80) ===============System license dd/MM/yyyy===================
+2021-03-19 10:35:07,997 INFO  [stdout] (ServerService Thread Pool -- 80) SerialNumber PC: 3F01A3E1-6785-11E8-B1EE-44107201C039
+2021-03-19 10:35:08,002 INFO  [stdout] (ServerService Thread Pool -- 80) App dev:11/05/2021
+2021-03-19 10:35:08,003 INFO  [stdout] (ServerService Thread Pool -- 80) App hub:11/05/2021
+2021-03-19 10:35:08,003 INFO  [stdout] (ServerService Thread Pool -- 80) App sys:11/05/2021
+2021-03-19 10:35:08,004 INFO  [stdout] (ServerService Thread Pool -- 80) App hub_admin:11/05/2021
+2021-03-19 10:35:08,004 INFO  [stdout] (ServerService Thread Pool -- 80) App wallet:11/05/2021
+2021-03-19 10:35:08,004 INFO  [stdout] (ServerService Thread Pool -- 80) App jconnect:11/05/2021
+2021-03-19 10:35:08,005 INFO  [stdout] (ServerService Thread Pool -- 80) App o9:11/05/2021
+2021-03-19 10:35:08,005 INFO  [stdout] (ServerService Thread Pool -- 80) Package jwebui:11/05/2021
+2021-03-19 10:35:08,005 INFO  [stdout] (ServerService Thread Pool -- 80) Package cis:11/05/2021
+2021-03-19 10:35:08,006 INFO  [stdout] (ServerService Thread Pool -- 80) Package master:11/05/2021
+2021-03-19 10:35:08,006 INFO  [stdout] (ServerService Thread Pool -- 80) Package wallet:11/05/2021
+2021-03-19 10:35:08,007 INFO  [stdout] (ServerService Thread Pool -- 80) Package o9:11/05/2021
+2021-03-19 10:35:08,007 INFO  [stdout] (ServerService Thread Pool -- 80) ===============System end license===================
+2021-03-19 10:35:08,008 INFO  [stdout] (ServerService Thread Pool -- 80) ===============Check JPA System===================
+2021-03-19 10:35:08,008 INFO  [stdout] (ServerService Thread Pool -- 80) JPA System not run
+2021-03-19 10:35:08,009 INFO  [stdout] (ServerService Thread Pool -- 80) ===============End JPA System===================
+2021-03-19 10:35:08,009 INFO  [stdout] (ServerService Thread Pool -- 80) =====================STARTED WITH VERSION 2.1.3=======================
+2021-03-19 10:35:08,009 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 80) RESTEASY002225: Deploying javax.ws.rs.core.Application: class master.gateway.gate_main
+2021-03-19 10:35:08,149 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 80) HV000001: Hibernate Validator 6.0.18.Final
+2021-03-19 10:35:08,277 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2021-03-19 10:35:08,424 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "jMaster_EAR.ear" (runtime-name : "jMaster_EAR.ear")
+2021-03-19 10:35:08,531 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-19 10:35:08,534 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-19 10:35:08,534 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-19 10:35:08,535 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.1.0.Final (WildFly Core 11.1.1.Final) started in 28977ms - Started 490 of 708 services (394 services are lazy, passive or on-demand)
+2021-03-19 10:35:08,736 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /: org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:82)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:346)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:193)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:457)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:229)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:135)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:356)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:138)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:215)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:227)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.api@2.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.undertow.websocket@2.1.0.Final//io.undertow.websockets.jsr.JsrWebSocketFilter.doFilter(JsrWebSocketFilter.java:173)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.1.0.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.1.0.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.1.0.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.1.0.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet@2.1.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.HttpContinueReadHandler.handleRequest(HttpContinueReadHandler.java:65)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.PathHandler.handleRequest(PathHandler.java:91)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.Host$OptionsHandler.handleRequest(Host.java:399)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.HttpContinueReadHandler.handleRequest(HttpContinueReadHandler.java:65)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.encoding.EncodingHandler.handleRequest(EncodingHandler.java:66)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at org.wildfly.extension.undertow@19.1.0.Final//org.wildfly.extension.undertow.Host$AcmeResourceHandler.handleRequest(Host.java:421)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:370)
+	at io.undertow.core@2.1.0.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.NullPointerException
+	at deployment.jMaster_EAR.ear//org.eclipse.persistence.jpa.rs.resources.common.AbstractPersistenceResource.getContextsV1(AbstractPersistenceResource.java:176)
+	at deployment.jMaster_EAR.ear//org.eclipse.persistence.jpa.rs.resources.common.AbstractPersistenceResource.getContextsInternal(AbstractPersistenceResource.java:80)
+	at deployment.jMaster_EAR.ear//org.eclipse.persistence.jpa.rs.resources.unversioned.PersistenceResource.getContexts(PersistenceResource.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:138)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:535)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:424)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$0(ResourceMethodInvoker.java:385)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:356)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:387)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:356)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:329)
+	at org.jboss.resteasy.resteasy-jaxrs@3.11.2.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:440)
+	... 69 more
+
+2021-03-19 10:49:04,577 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = jMaster_EAR.ear
+2021-03-19 10:49:04,577 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = jMaster_EAR.ear_oracle.jdbc.OracleDriver_11_2
+2021-03-19 10:49:04,578 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = jMaster_EAR.ear_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
+2021-03-19 10:49:04,577 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = jMaster_EAR.ear_com.mysql.jdbc.Driver_5_1
+2021-03-19 10:49:04,577 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = jMaster_EAR.ear_org.postgresql.Driver_42_2
+2021-03-19 10:49:04,588 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2021-03-19 10:49:04,592 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 30) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'jMaster_EAR.ear#jwebuiCore'
+2021-03-19 10:49:04,592 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'jMaster_EAR.ear#jMaster_Core'
+2021-03-19 10:49:04,596 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 30) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'jMaster_EAR.ear#jMaster_Core'
+2021-03-19 10:49:04,597 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'jMaster_EAR.ear#jwebuiCore'
+2021-03-19 10:49:04,657 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0004: Stopping Persistence Unit Service 'jMaster_EAR.ear#JWebUI_Core_JPA'
+2021-03-19 10:49:04,662 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: JWebUI_WAR.war) in 86ms
+2021-03-19 10:49:04,705 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment jMaster_EAR.ear (runtime-name: jMaster_EAR.ear) in 130ms
+2021-03-19 10:49:04,786 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0009: Undeployed "jMaster_EAR.ear" (runtime-name: "jMaster_EAR.ear")
+2021-03-19 10:49:09,817 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found jMaster_EAR.ear in deployment directory. To trigger deployment create a file called jMaster_EAR.ear.dodeploy
+2021-03-19 10:49:09,822 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "jMaster_EAR.ear" (runtime-name: "jMaster_EAR.ear")
+2021-03-19 10:49:13,484 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "JWebUI_WAR.war")
+2021-03-19 10:49:13,524 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for jwebuiCore
+2021-03-19 10:49:13,525 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for jMaster_Core
+2021-03-19 10:49:13,526 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for JWebUI_Core_JPA
+2021-03-19 10:49:13,690 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0003: Starting Persistence Unit Service 'jMaster_EAR.ear#JWebUI_Core_JPA'
+2021-03-19 10:49:13,736 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 30) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'jMaster_EAR.ear#jwebuiCore'
+2021-03-19 10:49:13,736 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 30) HHH000204: Processing PersistenceUnitInfo [
+	name: jwebuiCore
+	...]
+2021-03-19 10:49:13,744 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 84) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'jMaster_EAR.ear#jMaster_Core'
+2021-03-19 10:49:13,744 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 84) HHH000204: Processing PersistenceUnitInfo [
+	name: jMaster_Core
+	...]
+2021-03-19 10:49:14,113 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2021-03-19 10:49:14,114 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+2021-03-19 10:49:14,137 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0004: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.2)
+2021-03-19 10:49:14,139 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2021-03-19 10:49:14,140 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
+2021-03-19 10:49:14,140 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_oracle.jdbc.OracleDriver_11_2
+2021-03-19 10:49:14,140 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_com.mysql.jdbc.Driver_5_1
+2021-03-19 10:49:14,140 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'jMaster_EAR.ear#jMaster_Core'
+2021-03-19 10:49:14,140 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear
+2021-03-19 10:49:14,142 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 84) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'jMaster_EAR.ear#jwebuiCore'
+2021-03-19 10:49:14,142 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = jMaster_EAR.ear_org.postgresql.Driver_42_2
+2021-03-19 10:49:14,143 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 83) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-19 10:49:14,144 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 83) HHH000431: Unable to determine H2 database version, certain features may not work
+2021-03-19 10:49:14,165 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 83) Envers integration enabled? : true
+2021-03-19 10:49:14,175 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 84) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-19 10:49:14,176 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 83) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2021-03-19 10:49:14,176 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 84) HHH000431: Unable to determine H2 database version, certain features may not work
+2021-03-19 10:49:14,206 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 84) Envers integration enabled? : true
+2021-03-19 10:49:14,222 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 84) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2021-03-19 10:49:14,244 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 83) UT026003: Adding annotated server endpoint class master.gateway.webUiSocket for path /webchannel/webuisocket/{session_webui}
+2021-03-19 10:49:14,604 INFO  [stdout] (ServerService Thread Pool -- 83) System.out.println("vvvvvvvvvvvvvvvvvvvvvvvv|-> SYSTEM START <-|vvvvvvvvvvvvvvvvvvvvvvvv");
+2021-03-19 10:49:14,604 INFO  [stdout] (ServerService Thread Pool -- 83) |->Java Version:14.0.1
+2021-03-19 10:49:14,604 INFO  [stdout] (ServerService Thread Pool -- 83) ==========|-> LOADING REACT TEMPLATE
+2021-03-19 10:49:14,605 INFO  [stdout] (ServerService Thread Pool -- 83) |-> React template ok
+2021-03-19 10:49:14,605 INFO  [stdout] (ServerService Thread Pool -- 83) ==========|-> LOADING REACT LOGIN
+2021-03-19 10:49:14,607 INFO  [stdout] (ServerService Thread Pool -- 83) |-> React Login ok
+2021-03-19 10:49:14,608 INFO  [stdout] (ServerService Thread Pool -- 83) ====* parameter context *=====
+2021-03-19 10:49:14,608 INFO  [stdout] (ServerService Thread Pool -- 83) server ip: 180.77.15.107
+2021-03-19 10:49:14,608 INFO  [stdout] (ServerService Thread Pool -- 83) server port: 8444
+2021-03-19 10:49:14,608 INFO  [stdout] (ServerService Thread Pool -- 83) template_host_dev: http://127.0.0.1:8444/fwcss
+2021-03-19 10:49:14,609 INFO  [stdout] (ServerService Thread Pool -- 83) ===============System start parameter static===================
+2021-03-19 10:49:14,610 INFO  [stdout] (ServerService Thread Pool -- 83) ================BEGIN RUN BO START================
+2021-03-19 10:49:14,612 INFO  [stdout] (ServerService Thread Pool -- 83) ==============App:sys==============
+2021-03-19 10:49:14,613 INFO  [stdout] (ServerService Thread Pool -- 83) Running:Create static variable bostart
+2021-03-19 10:49:14,621 INFO  [stdout] (ServerService Thread Pool -- 83) Create app sys
+2021-03-19 10:49:14,629 INFO  [stdout] (ServerService Thread Pool -- 83) Co BO INPUT {"procname_GetJob":"op9m.getdatascheduleforprocess()","repeat_GetJob":"10","repeat_ExJob":"10","timeOutThread":60,"procmame_CleanLog":"jmidaml.cleanlog(?)"}
+2021-03-19 10:49:14,630 INFO  [stdout] (ServerService Thread Pool -- 83) Push Info sys complete
+2021-03-19 10:49:14,630 INFO  [stdout] (ServerService Thread Pool -- 83) ========> Start Create Variable for app Dev
+2021-03-19 10:49:14,630 INFO  [stdout] (ServerService Thread Pool -- 83) Scheduler can not create because don't have para for BO-Start
+2021-03-19 10:49:14,632 INFO  [stdout] (ServerService Thread Pool -- 83) Result BO:{"fo":[]}
+2021-03-19 10:49:14,632 INFO  [stdout] (ServerService Thread Pool -- 83) ==============App:dev==============
+2021-03-19 10:49:14,633 INFO  [stdout] (ServerService Thread Pool -- 83) Running:Create static variable bostart
+2021-03-19 10:49:14,633 INFO  [stdout] (ServerService Thread Pool -- 83) Create app dev
+2021-03-19 10:49:14,637 INFO  [stdout] (ServerService Thread Pool -- 83) Co BO INPUT {"sizePoolConnectDB":50}
+2021-03-19 10:49:14,638 INFO  [stdout] (ServerService Thread Pool -- 83) Push Info dev complete
+2021-03-19 10:49:14,638 INFO  [stdout] (ServerService Thread Pool -- 83) Para input: {"sizePoolConnectDB":50}
+2021-03-19 10:49:19,354 INFO  [stdout] (ServerService Thread Pool -- 83) Create connection in pool complete: 50
+2021-03-19 10:49:19,354 INFO  [stdout] (ServerService Thread Pool -- 83) Create Variable for schedule complete
+2021-03-19 10:49:19,356 INFO  [stdout] (ServerService Thread Pool -- 83) Result BO:{"fo":[]}
+2021-03-19 10:49:19,356 INFO  [stdout] (ServerService Thread Pool -- 83) ----------------END RUN BO START----------------
+2021-03-19 10:49:19,356 INFO  [stdout] (ServerService Thread Pool -- 83) ===============System license dd/MM/yyyy===================
+2021-03-19 10:49:19,357 INFO  [stdout] (ServerService Thread Pool -- 83) SerialNumber PC: 3F01A3E1-6785-11E8-B1EE-44107201C039
+2021-03-19 10:49:19,357 INFO  [stdout] (ServerService Thread Pool -- 83) App dev:11/05/2021
+2021-03-19 10:49:19,357 INFO  [stdout] (ServerService Thread Pool -- 83) App hub:11/05/2021
+2021-03-19 10:49:19,357 INFO  [stdout] (ServerService Thread Pool -- 83) App sys:11/05/2021
+2021-03-19 10:49:19,357 INFO  [stdout] (ServerService Thread Pool -- 83) App hub_admin:11/05/2021
+2021-03-19 10:49:19,358 INFO  [stdout] (ServerService Thread Pool -- 83) App wallet:11/05/2021
+2021-03-19 10:49:19,358 INFO  [stdout] (ServerService Thread Pool -- 83) App jconnect:11/05/2021
+2021-03-19 10:49:19,358 INFO  [stdout] (ServerService Thread Pool -- 83) App o9:11/05/2021
+2021-03-19 10:49:19,358 INFO  [stdout] (ServerService Thread Pool -- 83) Package jwebui:11/05/2021
+2021-03-19 10:49:19,358 INFO  [stdout] (ServerService Thread Pool -- 83) Package cis:11/05/2021
+2021-03-19 10:49:19,358 INFO  [stdout] (ServerService Thread Pool -- 83) Package master:11/05/2021
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) Package wallet:11/05/2021
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) Package o9:11/05/2021
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) ===============System end license===================
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) ===============Check JPA System===================
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) JPA System not run
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) ===============End JPA System===================
+2021-03-19 10:49:19,359 INFO  [stdout] (ServerService Thread Pool -- 83) =====================STARTED WITH VERSION 2.1.3=======================
+2021-03-19 10:49:19,360 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 83) RESTEASY002225: Deploying javax.ws.rs.core.Application: class master.gateway.gate_main
+2021-03-19 10:49:19,482 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2021-03-19 10:49:19,525 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "jMaster_EAR.ear" (runtime-name : "jMaster_EAR.ear")
+2021-03-19 10:57:52,352 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->tx.java.login=> line:164
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:643
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:52,353 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/login/user_config/admin@sys.com.txt
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->tx.java.login=> line:164
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:654
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:52,354 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:52,355 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:52,355 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/login/role_user/0ca9ebc5-73c3-4a98-b565-169461b0af32.txt
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->tx.java.login=> line:164
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:665
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:52,356 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:52,357 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/login/role_cache/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->tx.java.login=> line:164
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:680
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:52,358 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/login/dy_js/map.json
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:52,359 INFO  [stdout] (default task-2)  -->tx.java.login=> line:164
+2021-03-19 10:57:52,360 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:693
+2021-03-19 10:57:52,360 INFO  [stdout] (default task-2)  -->libDynamicJS.java.getMap=> line:17
+2021-03-19 10:57:52,360 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:52,360 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:52,360 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:52,360 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:52,434 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/sys/data/list_appliaction/aml.txt
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->txManagerUser.java.getListAppOfRole=> line:571
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:52,435 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:53,389 INFO  [stdout] (default task-2) loginapi_cis dev
+2021-03-19 10:57:53,390 INFO  [stdout] (default task-2) User Login ======> {"BRANID":"_","BRANCD":"_","USRID":"_","BRNAME":"_","WORKINGDATE":"19/03/2021"}
+2021-03-19 10:57:54,778 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:54,779 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/tx/fo/fo-scheduleJob-starting-resource-monitoring.json
+2021-03-19 10:57:54,779 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:54,779 INFO  [stdout] (default task-2)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 10:57:54,779 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:54,780 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:54,780 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:54,780 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:54,781 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:54,781 INFO  [stdout] (default task-2)  -->tx.java.loadTxCodeFo=> line:2133
+2021-03-19 10:57:54,781 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:54,781 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:54,781 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:54,781 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/tx/fo/fo-scheduleJob-startLoadDataSQLMonitoring.json
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:54,782 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:54,783 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:54,783 INFO  [stdout] (default task-2)  -->tx.java.loadTxCodeFo=> line:2133
+2021-03-19 10:57:54,783 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:54,783 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:54,783 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:54,783 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/user_config/admin@sys.com.txt
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->tx.java.lang_data=> line:1706
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:54,873 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:54,985 INFO  [stdout] (default task-2)  -->tx.java.login=> line:139
+2021-03-19 10:57:54,986 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:643
+2021-03-19 10:57:54,986 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:54,986 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:54,986 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:54,986 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:54,986 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/user_config/admin@sys.com.txt
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->tx.java.login=> line:139
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:654
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:54,987 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2) ==========================ERROR==========================
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/dy_js/tx/o9_secret.js
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2) FUNCTION LOG: --> 
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->tx.java.login=> line:139
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->tx.java.loadUserConfig=> line:693
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->libDynamicJS.java.getMap=> line:33
+2021-03-19 10:57:55,191 INFO  [stdout] (default task-2)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:55,192 INFO  [stdout] (default task-2)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:55,192 INFO  [stdout] (default task-2)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:55,192 INFO  [stdout] (default task-2) ---------------------------------------------------------
+2021-03-19 10:57:55,391 INFO  [stdout] (default task-2) ar_data_status_start [{"scheduleJob":{"name":"L?p liên t?c","type":"L","status":"start","time":1000,"creator":"ac02","conditions":"wf.context.scheduleContext_run_count<=1","modifier":"ac02","content_run":"[{\"txcode\":\"#sys:fo-scheduleJob-starting-resource-monitoring\",\"input\": {\"inputne\": \"starting-resource-monitoring\"}}]","id":"5dcfce88af37c0e9","AFGHkeyUserCreateWJ":"p56855d3np64A70","AFGHkeyIndexWJ":"bebb338b5df5904b","AFGHkeyTime":1588061934561,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1588061934580,"JWebUI_UserCreate":"p56855d3np64A70"}},{"scheduleJob":{"name":"transaction monitoring","type":"L","status":"start","time":10000,"creator":"ac02","conditions":"wf.context.scheduleContext_run_count<=1","modifier":"ac02","content_run":"[{\"txcode\":\"#sys:fo-scheduleJob-autoLoadDataSQLMonitoring\",\"input\":{\"learn_sql\": \"d_amlstmGetTxn5s\",\"table_code\":\"transactionMonitor\",\"app_name\":\"dev\"}}]","id":"5dcfce88af37c010","AFGHkeyUserCreateWJ":"p56855d3np64A70","AFGHkeyIndexWJ":"reloadTransactionMonitoringdebstm","AFGHkeyTime":1588061934561,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1588061934580,"JWebUI_UserCreate":"p56855d3np64A70"}}]
+2021-03-19 10:57:55,518 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 10:57:55,518 INFO  [stdout] (default task-4) MESSAGE:--> Not find==>C:/configWizData.json
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->MasterProcess.java.Start=> line:316
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1220
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->Class.java.forName=> line:340
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->Class.java.forName0=> line:-2
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->txDev_Form.java.<clinit>=> line:51
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->ProcessMonitorQueue.java.getInstance=> line:33
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->ProcessMonitorQueue.java.loadUrlConfigFile=> line:50
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->libSupport.java.getFile=> line:308
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:55,519 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 10:57:55,520 INFO  [stdout] (default task-4) 6 10000
+2021-03-19 10:57:55,524 INFO  [stdout] (default task-4) Start true
+2021-03-19 10:57:55,623 INFO  [stdout] (default task-4) dev =>  d_amlstmGetTxn5s
+2021-03-19 10:57:55,626 INFO  [stdout] (default task-4) Create statement 1
+2021-03-19 10:57:55,626 INFO  [stdout] (default task-4) 8 5000
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1) ==========================ERROR==========================
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1) FUNCTION LOG: --> 
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->Method.java.invoke=> line:564
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->txchat.java.getListUser=> line:28
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 10:57:56,107 INFO  [stdout] (default task-1) ---------------------------------------------------------
+2021-03-19 10:58:00,229 INFO  [stdout] (default task-1) ==============Connect to DB successfully============
+2021-03-19 10:58:51,564 INFO  [stdout] (default task-1) txDev_Form_searchbt
+2021-03-19 10:58:51,565 INFO  [stdout] (default task-1) Connect to DB ok.
+2021-03-19 10:59:26,185 INFO  [stdout] (default task-1) updateCustomer
+2021-03-19 10:59:26,185 INFO  [stdout] (default task-1) firstKey_Value_arr 1
+2021-03-19 10:59:26,186 INFO  [stdout] (default task-1) =====> ob_data_0 :{"sts":"C","descs":"Transaction Fail","txcode":"AML_OLSC","uniqueno":"524132-ffdc-4425-940c-1kljl212","rtnstatus":"P","rtnhit":"NNY|M","rtnscanid":"1196","rtnhitpep":null,"rtnencryptscanid":null,"rtnhitsanctio":null,"rtmhitblacklist":null,"wfdescs":"C","rtnscanid_sub":"1196"}
+2021-03-19 10:59:26,186 INFO  [stdout] (default task-1) update customer
+2021-03-19 10:59:26,186 INFO  [stdout] (default task-1) Connect to DB ok
+2021-03-19 10:59:26,186 INFO  [stdout] (default task-1) learnSql: {"learn_sql_title":"d_customerUpdateRtnResultForCustomer","learn_sql_query":"UPDATE jmidaml.d_customer SET rtnstatus = ?,uptdt=CURRENT_TIMESTAMP WHERE scanid = ?","learn_sql_parameter":"@rtnstatus,@rtnscanid","learn_sql_parameter_sub":"@rtnscanid","learn_sql_query_sub":"SELECT recid, customercode, dob, countrycode, customerid, uptdt, customername, scanid FROM jmidaml.d_customer WHERE rtnscanid = ?","learn_sql_data":"d_customer","learn_sql_date_verify":"","dynamic_update":"","validation_para_api":"","AFGHkeyIndexWJ":"d_customerUpdateRtnResultForCustomer","AFGHTimeWJ":1561266469836}
+2021-03-19 10:59:26,187 INFO  [stdout] (default task-1) rs_validation_field
+2021-03-19 10:59:26,188 INFO  [stdout] (default task-1) UPDATE jmidaml.d_customer SET rtnstatus = 'P',uptdt=CURRENT_TIMESTAMP WHERE scanid = '1196'
+2021-03-19 10:59:26,212 INFO  [stdout] (default task-1) Connect to DB ok
+2021-03-19 10:59:26,213 INFO  [stdout] (default task-1) learnSql: {"learn_sql_title":"Thêm m?i service","learn_sql_query":"UPDATE jmidaml.d_amlstm SET rtnhit=?, rtnscanid=?, rtnencryptscanid=?, sts=?, char17=?,rtnstatus = ?, updtxdt=CURRENT_TIMESTAMP  WHERE uniqueno=?;","learn_sql_parameter":"@rtnhit, @rtnscanid, @rtnencryptscanid, @sts, @descs,@rtnstatus ,@uniqueno","learn_sql_parameter_sub":"@uniqueno","learn_sql_query_sub":"SELECT recid, username, brcode, sysname, scanoption, uniqueno, searchname, searchcountry, searchdob, searchid, passportverify, securityno1, passexpirydtverify, passexpirydate, securityno2, riskfactors, content, rtnhit, rtnscanid, rtnencryptscanid,rtnstatus, txcode, txdt, updtxdt, txrefid, sts,rtnstatus FROM jmidaml.d_amlstm WHERE uniqueno =?","learn_sql_data":"d_amlstm","learn_sql_date_verify":"","dynamic_update":"","validation_para_api":"","learn_sql_workfolow":"d_workflowInsertRequestAPI","paras_workfolow":"@txcode,@id,*requestmess,@wfdescs","AFGHkeyIndexWJ":"d_amlstmUpdateOne","AFGHTimeWJ":1561266469836}
+2021-03-19 10:59:26,213 INFO  [stdout] (default task-1) rs_validation_field
+2021-03-19 10:59:26,214 INFO  [stdout] (default task-1) {"sts":"C","descs":"Transaction Fail","txcode":"AML_OLSC","uniqueno":"524132-ffdc-4425-940c-1kljl212","rtnstatus":"P","rtnhit":"NNY|M","rtnscanid":"1196","rtnhitpep":null,"rtnencryptscanid":null,"rtnhitsanctio":null,"rtmhitblacklist":null,"wfdescs":"C","rtnscanid_sub":"1196"}
+2021-03-19 10:59:26,266 INFO  [stdout] (default task-1) Insert workfolow success with d_workflowInsertRequestAPI
+2021-03-19 10:59:26,266 INFO  [stdout] (default task-1) Insert workfolow success with {"data":{"txcode":"AML_OLSC","requestmess":{"sts":"C","descs":"Transaction Fail","txcode":"AML_OLSC","uniqueno":"524132-ffdc-4425-940c-1kljl212","rtnstatus":"P","rtnhit":"NNY|M","rtnscanid":"1196","rtnhitpep":null,"rtnencryptscanid":null,"rtnhitsanctio":null,"rtmhitblacklist":null,"wfdescs":"C","rtnscanid_sub":"1196","requestmess":"{\"sts\":\"C\",\"descs\":\"Transaction Fail\",\"txcode\":\"AML_OLSC\",\"uniqueno\":\"524132-ffdc-4425-940c-1kljl212\",\"rtnstatus\":\"P\",\"rtnhit\":\"NNY|M\",\"rtnscanid\":\"1196\",\"rtnhitpep\":null,\"rtnencryptscanid\":null,\"rtnhitsanctio\":null,\"rtmhitblacklist\":null,\"wfdescs\":\"C\",\"rtnscanid_sub\":\"1196\"}","id":""},"wfdescs":"C"}}
+2021-03-19 10:59:26,267 INFO  [stdout] (default task-1) UPDATE jmidaml.d_amlstm SET rtnhit='NNY|M', rtnscanid='1196', rtnencryptscanid='', sts='C', char17='Transaction Fail',rtnstatus = 'P', updtxdt=CURRENT_TIMESTAMP  WHERE uniqueno='524132-ffdc-4425-940c-1kljl212'
+2021-03-19 10:59:43,861 INFO  [stdout] (default task-1) txDev_Form_searchbt
+2021-03-19 10:59:43,862 INFO  [stdout] (default task-1) Connect to DB ok.
+2021-03-19 11:01:09,682 INFO  [stdout] (default task-1) txDev_Form_searchbt
+2021-03-19 11:01:09,683 INFO  [stdout] (default task-1) Connect to DB ok.
+2021-03-19 11:01:14,301 INFO  [stdout] (default task-1) ==============Connect to DB successfully============
+2021-03-19 11:03:44,491 INFO  [stdout] (default task-1) txsql_view
+2021-03-19 11:03:44,498 INFO  [stdout] (default task-1) Connect to DB ok.
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1) ==========================ERROR==========================
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/tx/fo/fo-scheduleJob-starting-resource-monitoring.json
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1) FUNCTION LOG: --> 
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->MasterProcess.java.Start=> line:316
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->null.invoke=> line:-1
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->tx.java.loadTxCodeFo=> line:2133
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,215 INFO  [stdout] (default task-1) ---------------------------------------------------------
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1) ==========================ERROR==========================
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/tx/fo/fo-scheduleJob-startLoadDataSQLMonitoring.json
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1) FUNCTION LOG: --> 
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->MasterProcess.java.Start=> line:316
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->null.invoke=> line:-1
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->tx.java.loadTxCodeFo=> line:2133
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,218 INFO  [stdout] (default task-1)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,220 INFO  [stdout] (default task-1) ---------------------------------------------------------
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/user_config/admin@sys.com.txt
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->tx.java.lang_data=> line:1706
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,279 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:07:04,326 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->tx.java.login=> line:139
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->tx.java.loadUserConfig=> line:643
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,327 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/user_config/admin@sys.com.txt
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->tx.java.login=> line:139
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->tx.java.loadUserConfig=> line:654
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,328 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,329 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:07:04,349 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:07:04,349 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/dy_js/tx/o9_secret.js
+2021-03-19 11:07:04,349 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:07:04,349 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,349 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,349 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->tx.java.login=> line:139
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->tx.java.loadUserConfig=> line:693
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->libDynamicJS.java.getMap=> line:33
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,350 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:07:04,441 INFO  [stdout] (default task-4) ar_data_status_start [{"scheduleJob":{"name":"L?p liên t?c","type":"L","status":"start","time":1000,"creator":"ac02","conditions":"wf.context.scheduleContext_run_count<=1","modifier":"ac02","content_run":"[{\"txcode\":\"#sys:fo-scheduleJob-starting-resource-monitoring\",\"input\": {\"inputne\": \"starting-resource-monitoring\"}}]","id":"5dcfce88af37c0e9","AFGHkeyUserCreateWJ":"p56855d3np64A70","AFGHkeyIndexWJ":"bebb338b5df5904b","AFGHkeyTime":1588061934561,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1588061934580,"JWebUI_UserCreate":"p56855d3np64A70"}},{"scheduleJob":{"name":"transaction monitoring","type":"L","status":"start","time":10000,"creator":"ac02","conditions":"wf.context.scheduleContext_run_count<=1","modifier":"ac02","content_run":"[{\"txcode\":\"#sys:fo-scheduleJob-autoLoadDataSQLMonitoring\",\"input\":{\"learn_sql\": \"d_amlstmGetTxn5s\",\"table_code\":\"transactionMonitor\",\"app_name\":\"dev\"}}]","id":"5dcfce88af37c010","AFGHkeyUserCreateWJ":"p56855d3np64A70","AFGHkeyIndexWJ":"reloadTransactionMonitoringdebstm","AFGHkeyTime":1588061934561,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1588061934580,"JWebUI_UserCreate":"p56855d3np64A70"}}]
+2021-03-19 11:07:04,630 INFO  [stdout] (default task-5) Start true
+2021-03-19 11:07:04,641 INFO  [stdout] (default task-4) dev =>  d_amlstmGetTxn5s
+2021-03-19 11:07:04,693 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:07:04,693 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 11:07:04,693 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:07:04,693 INFO  [stdout] (default task-4)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:07:04,693 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:07:04,693 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->txchat.java.getListUser=> line:28
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:07:04,694 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:07:07,969 INFO  [stdout] (default task-4) ==============Connect to DB successfully============
+2021-03-19 11:08:45,594 INFO  [stdout] (default task-4) txDev_Form_searchbt
+2021-03-19 11:08:45,594 INFO  [stdout] (default task-4) Connect to DB ok.
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/tx/fo/fo-scheduleJob-starting-resource-monitoring.json
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->MasterProcess.java.Start=> line:316
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->null.invoke=> line:-1
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->tx.java.loadTxCodeFo=> line:2133
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,384 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4) ==========================ERROR==========================
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/tx/fo/fo-scheduleJob-startLoadDataSQLMonitoring.json
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4) FUNCTION LOG: --> 
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->MasterProcess.java.Start=> line:316
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->null.invoke=> line:-1
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->tx.java.loadTxCodeFo=> line:2133
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,385 INFO  [stdout] (default task-4) ---------------------------------------------------------
+2021-03-19 11:09:27,435 INFO  [stdout] (default task-6) ==========================ERROR==========================
+2021-03-19 11:09:27,435 INFO  [stdout] (default task-6) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/user_config/admin@sys.com.txt
+2021-03-19 11:09:27,437 INFO  [stdout] (default task-6) FUNCTION LOG: --> 
+2021-03-19 11:09:27,437 INFO  [stdout] (default task-6)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:09:27,437 INFO  [stdout] (default task-6)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:09:27,437 INFO  [stdout] (default task-6)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->tx.java.lang_data=> line:1706
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,438 INFO  [stdout] (default task-6) ---------------------------------------------------------
+2021-03-19 11:09:27,491 INFO  [stdout] (default task-6) ==========================ERROR==========================
+2021-03-19 11:09:27,491 INFO  [stdout] (default task-6) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 11:09:27,491 INFO  [stdout] (default task-6) FUNCTION LOG: --> 
+2021-03-19 11:09:27,491 INFO  [stdout] (default task-6)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->tx.java.login=> line:139
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->tx.java.loadUserConfig=> line:643
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,492 INFO  [stdout] (default task-6) ---------------------------------------------------------
+2021-03-19 11:09:27,493 INFO  [stdout] (default task-6) ==========================ERROR==========================
+2021-03-19 11:09:27,493 INFO  [stdout] (default task-6) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/user_config/admin@sys.com.txt
+2021-03-19 11:09:27,493 INFO  [stdout] (default task-6) FUNCTION LOG: --> 
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->tx.java.login=> line:139
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->tx.java.loadUserConfig=> line:654
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,494 INFO  [stdout] (default task-6) ---------------------------------------------------------
+2021-03-19 11:09:27,511 INFO  [stdout] (default task-6) ==========================ERROR==========================
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/apps/domain1/dev/dy_js/tx/o9_secret.js
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6) FUNCTION LOG: --> 
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->tx.java.login=> line:139
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->tx.java.loadUserConfig=> line:693
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->libDynamicJS.java.getMap=> line:33
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,512 INFO  [stdout] (default task-6) ---------------------------------------------------------
+2021-03-19 11:09:27,579 INFO  [stdout] (default task-6) ar_data_status_start [{"scheduleJob":{"name":"L?p liên t?c","type":"L","status":"start","time":1000,"creator":"ac02","conditions":"wf.context.scheduleContext_run_count<=1","modifier":"ac02","content_run":"[{\"txcode\":\"#sys:fo-scheduleJob-starting-resource-monitoring\",\"input\": {\"inputne\": \"starting-resource-monitoring\"}}]","id":"5dcfce88af37c0e9","AFGHkeyUserCreateWJ":"p56855d3np64A70","AFGHkeyIndexWJ":"bebb338b5df5904b","AFGHkeyTime":1588061934561,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1588061934580,"JWebUI_UserCreate":"p56855d3np64A70"}},{"scheduleJob":{"name":"transaction monitoring","type":"L","status":"start","time":10000,"creator":"ac02","conditions":"wf.context.scheduleContext_run_count<=1","modifier":"ac02","content_run":"[{\"txcode\":\"#sys:fo-scheduleJob-autoLoadDataSQLMonitoring\",\"input\":{\"learn_sql\": \"d_amlstmGetTxn5s\",\"table_code\":\"transactionMonitor\",\"app_name\":\"dev\"}}]","id":"5dcfce88af37c010","AFGHkeyUserCreateWJ":"p56855d3np64A70","AFGHkeyIndexWJ":"reloadTransactionMonitoringdebstm","AFGHkeyTime":1588061934561,"AFGHkeyWorkFlow":"","AFGHTimeWJ":1588061934580,"JWebUI_UserCreate":"p56855d3np64A70"}}]
+2021-03-19 11:09:27,705 INFO  [stdout] (default task-5) Start true
+2021-03-19 11:09:27,752 INFO  [stdout] (default task-5) ==========================ERROR==========================
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5) MESSAGE:--> file_path:D:\JITS\CIS\JMIDDLEWARELIVE for AML\DEV\serverWildfly\standalone\configuration/conf/chat/profile/0ca9ebc5-73c3-4a98-b565-169461b0af32.json
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5) FUNCTION LOG: --> 
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->MasterProcess.java.runBo=> line:534
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->MasterProcess.java.runFunction=> line:1296
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->Method.java.invoke=> line:564
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->DelegatingMethodAccessorImpl.java.invoke=> line:43
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->NativeMethodAccessorImpl.java.invoke=> line:62
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->NativeMethodAccessorImpl.java.invoke0=> line:-2
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->txchat.java.getListUser=> line:28
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->libBasicAction.java.PersistData_read=> line:668
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->libBasicAction.java.getFile=> line:52
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5)  -->libSupport.java.showErrorForDev=> line:537
+2021-03-19 11:09:27,753 INFO  [stdout] (default task-5) ---------------------------------------------------------
+2021-03-19 11:09:27,799 INFO  [stdout] (default task-5) dev =>  d_amlstmGetTxn5s
+2021-03-19 11:09:31,457 INFO  [stdout] (default task-5) ==============Connect to DB successfully============
+2021-03-19 11:10:11,367 INFO  [stdout] (default task-5) txDev_Form_searchbt
+2021-03-19 11:10:11,367 INFO  [stdout] (default task-5) Connect to DB ok.
+2021-03-19 11:11:52,708 INFO  [stdout] (default task-5) ==============Connect to DB successfully============
+2021-03-19 11:16:20,062 INFO  [stdout] (default task-5) txDev_Form_searchbt
+2021-03-19 11:16:20,063 INFO  [stdout] (default task-5) Connect to DB ok.
+2021-03-19 11:17:21,774 INFO  [stdout] (default task-5) txDev_Form_searchbt
+2021-03-19 11:17:21,775 INFO  [stdout] (default task-5) Connect to DB ok.
+2021-03-19 11:20:09,983 INFO  [stdout] (default task-5) txDev_Form_searchbt
+2021-03-19 11:20:09,984 INFO  [stdout] (default task-5) Connect to DB ok.
+2021-03-19 11:20:15,148 INFO  [stdout] (default task-5) txDev_Form_searchbt
+2021-03-19 11:20:15,151 INFO  [stdout] (default task-5) Connect to DB ok.

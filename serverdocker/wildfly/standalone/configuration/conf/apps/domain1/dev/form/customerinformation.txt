@@ -1,0 +1,535 @@
+{
+	"info": {
+		"title": "Customer Information",
+		"des": "Customer information",
+		"data": "",
+		"openOne": "true",
+		"group_menu": "sp553D4v9g54B75",
+		"node_position": [],
+		"flow_layout": [],
+		"learnapi": "",
+		"form_code": "customerinformation",
+		"ruleStrong": [
+			{
+				"code": "visibility",
+				"config": {
+					"component_event": "all",
+					"component_action": "",
+					"component_result": "customercode;customername;dob;countrycode;customerid;rtnhit,rtnstatus",
+					"condition": "",
+					"visible": "not_use",
+					"ena_dis": "true",
+					"view_result": "",
+					"list_config": []
+				},
+				"inUse": true,
+				"order": 4,
+				"isStart": true
+			}
+		],
+		"key_form": "p6j347j7hr894733",
+		"ofModal": false,
+		"learnsql": "d_amlCustomerLoadAllToForm",
+		"bodata": "",
+		"lang_form": {},
+		"mode_form": {
+			"mode": "",
+			"col_text": "",
+			"col_input": ""
+		}
+	},
+	"list_layout": [
+		{
+			"name": "Search",
+			"des": "",
+			"class": "",
+			"lang": {},
+			"lang_des": {},
+			"codeHidden": "e56213214erf02c4d",
+			"inputtype": "cLayout",
+			"list_view": [
+				{
+					"name": "",
+					"lang": {},
+					"code": "code",
+					"class": "",
+					"codeHidden": "1456cb9e267dba8bc",
+					"inputtype": "cView",
+					"isTab": "false",
+					"viewUI": "",
+					"list_input": [
+						{
+							"default": {
+								"name": "Search",
+								"code": "search",
+								"codeHidden": "5042e8bf661efab8",
+								"class": "col-xl-6 col-lg-6 col-md-5 col-sm-5",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "keysearch.data",
+								"structable_read": "",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false",
+								"isSearch": "true"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Search",
+								"code": "btn_search",
+								"codeHidden": "f0229c6ca2ba7418",
+								"class": "",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"action": "",
+								"txFoActions": "[\n    {\n        \"txcode\": \"#sys:fo-search-transaction-jonural\",\n        \"input\": {\n            \"list_component\": \"search\",\n            \"list_view\": \"table\",\n            \"table_code\": \"d_customer\"\n        }\n    }\n]",
+								"txFo": "[\n    {\n        \"txcode\": \"#sys:fo-post-searchDataByParameter\",\n        \"input\": {\n            \"list_component\": \"search\",\n            \"list_view\": \"search\",\n            \"table_code\": \"keysearch\",\n            \"learn_sql\": \"d_customer_searchbyparameter\"\n        }\n    }\n]",
+								"useAction": "false",
+								"icon": "search",
+								"color": "info",
+								"onTable": "",
+								"isMasterData": "false",
+								"tableMasterData": "",
+								"privateKeyTableMasterData": ""
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {
+								"danger": "",
+								"warning": ""
+							},
+							"validate": {},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cButton"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "List customer",
+			"des": "",
+			"class": "",
+			"lang": {},
+			"lang_des": {},
+			"codeHidden": "08e09f13877450cc",
+			"inputtype": "cLayout",
+			"list_view": [
+				{
+					"name": "",
+					"lang": {},
+					"code": "code",
+					"class": "",
+					"codeHidden": "f4331befad2818a6",
+					"inputtype": "cView",
+					"isTab": "false",
+					"viewUI": "",
+					"list_input": [
+						{
+							"default": {
+								"name": "customer listing",
+								"code": "apistatement",
+								"codeHidden": "sp5557p7Cp4ze",
+								"class": "col-12",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"structable": "",
+								"query_data": "select * from d_customer",
+								"paging_record": "50",
+								"columns": "[\n    {\n        \"code\": \"d_customer.recid\",\n        \"title\": \"Recid\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    }, \n    {\n        \"code\": \"d_customer.customername\",\n        \"title\": \"Customer name\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_customer.dob\",\n        \"title\": \"Date of birth\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_customer.countrycode\",\n        \"title\": \"Country code\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_customer.customerid\",\n        \"title\": \"ID/Passport\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    }\n,{\n        \"code\": \"d_customer.customercode\",\n        \"title\": \"Customer code\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },{\n        \"code\": \"d_customer.rtnhit\",\n        \"title\": \"HIT?\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },{\n        \"code\": \"d_customer.scanid\",\n        \"title\": \"Scan ID\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },{\n        \"code\": \"d_customer.rtnstatus\",\n        \"title\": \"Status scan\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },{\n        \"code\": \"d_customer.uptdt\",\n        \"title\": \"Date change\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    }]"
+							},
+							"role": {},
+							"property": {},
+							"validate": {},
+							"lang": {
+								"vi": {								
+								},
+								"en": {
+								}
+							},
+							"configAVD": {},
+							"inputtype": "cTableDefault"
+						},
+						{
+							"default": {
+								"name": "View",
+								"code": "btn_view",
+								"codeHidden": "15c0afe6eaae79fe",
+								"class": "",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"action": "",
+								"txFoActions": "",
+								"txFo": "[\n    {\n        \"txcode\": \"#sys:fo-post-viewDataSQL\",\n        \"input\": {\n            \"learn_sql\": \"d_amlCustomerViewOne\"\n        }\n    }\n]",
+								"useAction": "false",
+								"icon": "view",
+								"color": "info",
+								"onTable": "apistatement",
+								"isMasterData": "false",
+								"tableMasterData": "",
+								"privateKeyTableMasterData": ""
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {
+								"danger": "",
+								"warning": ""
+							},
+							"validate": {},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cButton"
+						},
+						{
+							"default": {
+								"name": "Delete",
+								"code": "btn_delete",
+								"codeHidden": "v8md3qnwjqoh5sft",
+								"class": "",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"action": "",
+								"txFoActions": "",
+								"txFo": "[\n    {\n        \"txcode\": \"#sys:fo-post-deleteDataSQL\",\n        \"input\": {\n            \"table_code\": \"d_customer\",\n           \"pk_col\": \"recid\",            \"learn_sql\": \"d_customerDeleteOne\"        }\n    }\n]",
+								"useAction": "false",
+								"icon": "delete",
+								"color": "base",
+								"onTable": "apistatement",
+								"isMasterData": "false",
+								"tableMasterData": "",
+								"privateKeyTableMasterData": ""
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {
+								"danger": "",
+								"warning": ""
+							},
+							"validate": {},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cButton"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Details",
+			"des": "Note",
+			"class": "",
+			"lang": {},
+			"lang_des": {},
+			"codeHidden": "3e0965547cd2a137",
+			"inputtype": "cLayout",
+			"list_view": [
+				{
+					"code": "code",
+					"name": "View model",
+					"inputtype": "cView",
+					"isTab": "false",
+					"codeHidden": "f3b3574606ee5079",
+					"list_input": [
+						
+						{
+							"default": {
+								"name": "Customer name",
+								"code": "customername",
+								"codeHidden": "dae00cbe7db5d1ab8",
+								"class": "col-xl-6 col-lg-6 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_customer.customername",
+								"structable_read": "d_customer.customername",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Date of birth",
+								"code": "dob",
+								"codeHidden": "eb785d6e83s3bf1e4",
+								"class": "col-xl-6 col-lg-6 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_customer.dob",
+								"structable_read": "d_customer.dob",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": "true"
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Country code",
+								"code": "countrycode",
+								"codeHidden": "6cc697528cad037f5",
+								"class": "col-xl-6 col-lg-6 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_customer.countrycode",
+								"structable_read": "d_customer.countrycode",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "ID/Passport",
+								"code": "customerid",
+								"codeHidden": "0145b1006ada28c0",
+								"class": "col-xl-6 col-lg-6 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_customer.customerid",
+								"structable_read": "d_customer.customerid",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						}
+						,{
+							"default": {
+								"name": "Customer code",
+								"code": "customercode",
+								"codeHidden": "dae00cbe7b5d1fbd8",
+								"class": "col-xl-6 col-lg-6 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_customer.customercode",
+								"structable_read": "d_customer.customercode",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},{
+							"default": {
+								"name": "HIT?",
+								"code": "rtnhit",
+								"codeHidden": "dae00cbe7b5d1fbd8",
+								"class": "col-xl-6 col-lg-6 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_customer.rthit",
+								"structable_read": "d_customer.rtnhit",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						}
+					]
+				}
+			]
+		}
+	],
+	"react_txt": ""
+}

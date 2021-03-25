@@ -1,0 +1,13 @@
+﻿{
+	"learn_sql_title": "d_customerUpdateRtnHitForCustomer",
+	"learn_sql_query": "UPDATE jmidaml.d_customer SET rtnhit = ?,uptdt=CURRENT_TIMESTAMP, scanid = ? WHERE dob=? and countrycode=? and customerid=? and customername=?",
+	"learn_sql_parameter": "@rtnhit_sub,@rtnscanid, @searchdob_sub, @searchcountry_sub, @searchid_sub, @searchname_sub",
+	"learn_sql_parameter_sub": "@searchdob_sub, @searchcountry_sub, @searchid_sub, @searchname_sub",
+	"learn_sql_query_sub": "SELECT recid, customercode, dob, countrycode, customerid, uptdt, customername, scanid FROM jmidaml.d_customer WHERE dob=? and countrycode=? and customerid=? and customername=?",
+	"learn_sql_data": "d_customer",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_customerUpdateRtnHitForCustomer",
+	"AFGHTimeWJ": 1561266469836
+}

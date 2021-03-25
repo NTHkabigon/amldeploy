@@ -1,0 +1,15 @@
+﻿{
+	"learn_sql_title": "d_amlstmInsertOne",
+	"learn_sql_query": "INSERT INTO jmidaml.d_amlstm(username, brcode, sysname, scanoption, uniqueno, searchname, searchcountry, searchdob, searchid, passportverify, securityno1, passexpirydtverify, passexpirydate, securityno2, riskfactors, content, rtnhit, rtnscanid, rtnencryptscanid, txcode, txdt, updtxdt, txrefid, sts, date01, date02, id, txtype, customercode,rtnstatus) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,jmidaml.gene_aml_txrefid(),?,TO_TIMESTAMP(?,'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP(?,'YYYY-MM-DD HH24:MI:SS'),?,?,?,?)",
+	"learn_sql_parameter": "@username, @brcode, @sysname, @scanoption, @uniqueno, @searchname, @searchcountry, @searchdob, @searchid, @passportverify, @securityno1, @passexpirydtverify, @passexpirydate, @securityno2, @riskfactors, @content, @rtnhit, @rtnscanid, @rtnencryptscanid, @txcode, @sts,@frdt,@todt,@id,@txtype, @customercode,@rtnstatus",
+	"learn_sql_parameter_sub": "#pk_col",
+	"learn_sql_query_sub": "SELECT recid, username, brcode, sysname,id,rtnstatus, scanoption, uniqueno, searchname, searchcountry, searchdob, searchid, passportverify, securityno1, passexpirydtverify, passexpirydate, securityno2, riskfactors, content, rtnhit, rtnscanid, rtnencryptscanid, txcode, txdt, updtxdt, txrefid, sts, customercode FROM jmidaml.d_amlstm WHERE recid =?",
+	"learn_sql_data": "d_amlstm",
+	"learn_sql_date_verify": "frdt,todt",
+	"dynamic_update": "",
+	"learn_sql_workfolow": "d_workflowInsertRequestAPI",
+	"paras_workfolow": "@txcode,@id,*requestmess,@wfdescs",
+	"validation_para_api": "customercode,searchname,searchid, searchdob, username,brcode,sysname,id,txtype",
+	"AFGHkeyIndexWJ": "d_amlstmInsertOne",
+	"AFGHTimeWJ": 1561266469836
+}

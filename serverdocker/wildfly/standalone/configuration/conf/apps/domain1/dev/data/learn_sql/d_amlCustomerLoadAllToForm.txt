@@ -1,0 +1,13 @@
+{
+	"learn_sql_title": "Tải tất cả data của d_customer",
+	"learn_sql_parameter": "",
+	"learn_sql_parameter_sub": "",
+	"learn_sql_query": "SELECT recid, customercode, dob, countrycode, customerid,  to_char(uptdt,'YYYY-MM-DD HH:MI:SS') as uptdt, customername,rtnhit, scanid,rtnstatus FROM jmidaml.d_customer order by recid DESC",
+	"learn_sql_query_sub": "",
+	"learn_sql_data": "d_customer",
+	"learn_sql_date_verify": "",
+	"dynamic_update": "",
+	"validation_para_api": "",
+	"AFGHkeyIndexWJ": "d_amlCustomerLoadAllToForm",
+	"AFGHTimeWJ": 15612636352755
+}

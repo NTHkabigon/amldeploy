@@ -1,0 +1,1435 @@
+{
+	"info": {
+		"title": "Transaction journal",
+		"des": "Transaction journal",
+		"data": "",
+		"openOne": "true",
+		"group_menu": "sp553D4v9g54B75",
+		"node_position": [
+		],
+		"flow_layout": [
+			
+		],
+		"learnapi": "",
+		"form_code": "transactionjournalform",
+		"ruleStrong": [
+			{
+				"code": "visibility",
+				"config": {
+					"component_event": "all",
+					"component_action": "",
+					"component_result": "rtnstatus;transctionreference;txcode;txdt;sts;uniqueno;customercode;searchid;searchname;searchcountry;brcode;searchdo;txtype;username;sysname;scanoption;passportverify;securityno1;frdt;passexpirydtverify;passexpirydate;securityno2;riskfactors;content;rtnhit;rtnscanid;rtnencryptscanid;todt;r",
+					"condition": "",
+					"visible": "not_use",
+					"ena_dis": "true",
+					"view_result": "",
+					"list_config": []
+				},
+				"inUse": true,
+				"order": 4,
+				"isStart": true
+			}
+		],
+		"key_form": "p6j347j7hr89473",
+		"ofModal": false,
+		"learnsql": "d_amlstmLoadAllToForm",
+		"bodata": "",
+		"lang_form": {},
+		"mode_form": {
+			"mode": "",
+			"col_text": "",
+			"col_input": ""
+		}
+	},
+	"list_layout": [
+		{
+			"name": "Search",
+			"des": "",
+			"class": "",
+			"lang": {},
+			"lang_des": {},
+			"codeHidden": "e56213214ef02c4d",
+			"inputtype": "cLayout",
+			"list_view": [
+				{
+					"name": "",
+					"lang": {},
+					"code": "code",
+					"class": "",
+					"codeHidden": "1456cb9267dba8bc",
+					"inputtype": "cView",
+					"isTab": "false",
+					"viewUI": "",
+					"list_input": [
+						{
+							"default": {
+								"name": "Search",
+								"code": "search",
+								"codeHidden": "5042e8bf661efab8",
+								"class": "col-xl-4 col-lg-4 col-md-5 col-sm-5",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "keysearch.data",
+								"structable_read": "",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false",
+								"isSearch": "true"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Search",
+								"code": "btn_search",
+								"codeHidden": "f0229c6ca2ba7418",
+								"class": "",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"action": "",
+								"txFoActions": "[\n    {\n        \"txcode\": \"#sys:fo-search-transaction-jonural\",\n        \"input\": {\n            \"list_component\": \"search\",\n            \"list_view\": \"table\",\n            \"table_code\": \"d_amlstm\"\n        }\n    }\n]",
+								"txFo": "[\n    {\n        \"txcode\": \"#sys:fo-post-searchDataByParameter\",\n        \"input\": {\n            \"list_component\": \"search\",\n            \"list_view\": \"search\",\n            \"table_code\": \"keysearch\",\n            \"learn_sql\": \"d_almstm_searchbyparameter\"\n        }\n    }\n]",
+								"useAction": "false",
+								"icon": "search",
+								"color": "info",
+								"onTable": "",
+								"isMasterData": "false",
+								"tableMasterData": "",
+								"privateKeyTableMasterData": ""
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {
+								"danger": "",
+								"warning": ""
+							},
+							"validate": {},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cButton"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "List transaction",
+			"des": "",
+			"class": "",
+			"lang": {},
+			"lang_des": {},
+			"codeHidden": "08e09f13877450cc",
+			"inputtype": "cLayout",
+			"list_view": [
+				{
+					"name": "",
+					"lang": {},
+					"code": "code",
+					"class": "",
+					"codeHidden": "f4331befad2818a6",
+					"inputtype": "cView",
+					"isTab": "false",
+					"viewUI": "",
+					"list_input": [
+						{
+							"default": {
+								"name": "Transaction listing",
+								"code": "apistatement",
+								"codeHidden": "sp5557p7Cp4ze",
+								"class": "col-12",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"structable": "",
+								"query_data": "select * from d_amlstm",
+								"paging_record": "50",
+								"columns": "[\n    {\n        \"code\": \"d_amlstm.recid\",\n        \"title\": \"Recid\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    }, {\n        \"code\": \"d_amlstm.id\",\n        \"title\": \"Transaction reference\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.txdt\",\n        \"title\": \"Transaction date\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.txcode\",\n        \"title\": \"Transaction code\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.username\",\n        \"title\": \"User name\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.brcode\",\n        \"title\": \"Branch code\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.scanoption\",\n        \"title\": \"Scan option\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.sts\",\n        \"title\": \"Status\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.customercode\",\n        \"title\": \"Customer code\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.searchname\",\n        \"title\": \"Search name\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.searchcountry\",\n        \"title\": \"Nationality/Residence\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.searchdob\",\n        \"title\": \"Year of birth\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.searchid\",\n        \"title\": \"Search ID\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.rtnhit\",\n        \"title\": \"Return Hit\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.rtnscanid\",\n        \"title\": \"Scanid\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.rtnstatus\",\n        \"title\": \"Return status\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    },\n    {\n        \"code\": \"d_amlstm.rtnencryptscanid\",\n        \"title\": \"Encrypt scanid\",\n        \"inputtype\": \"ColumnString\",\n        \"config\": {}\n    }\n]"
+							},
+							"role": {},
+							"property": {},
+							"validate": {},
+							"lang": {
+								"vi": {
+									"Recid": "Recid",
+									"Transaction date": "Transaction date",
+									"Transaction code": "Transaction code",
+									"Transaction reference number": "Transaction reference number",
+									"Status": "Status",
+									"Error description": "Error description",
+									"Transaction reversed": "Transaction reversed",
+									"Service code": "Service code",
+									"Bill currency": "Bill currency",
+									"Bill amount": "Bill amount",
+									"Fee code": "Fee code",
+									"Dr fee amount": "Dr fee amount",
+									"Cr fee amount": "Cr fee amount",
+									"Notify email": "Notify email",
+									"UserID": "UserID",
+									"Branch": "Branch"
+								},
+								"en": {
+									"Recid": "Recid",
+									"Transaction date": "Transaction date",
+									"Transaction code": "Transaction code",
+									"Transaction reference number": "Transaction reference number",
+									"Status": "Status",
+									"Error description": "Error description",
+									"Transaction reversed": "Transaction reversed",
+									"Service code": "Service code",
+									"Bill currency": "Bill currency",
+									"Bill amount": "Bill amount",
+									"Fee code": "Fee code",
+									"Dr fee amount": "Dr fee amount",
+									"Cr fee amount": "Cr fee amount",
+									"Notify email": "Notify email",
+									"UserID": "UserID",
+									"Branch": "Branch"
+								}
+							},
+							"configAVD": {},
+							"inputtype": "cTableDefault"
+						},
+						{
+							"default": {
+								"name": "View",
+								"code": "btn_view",
+								"codeHidden": "15c0afe6eaae79fe",
+								"class": "",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"action": "",
+								"txFoActions": "",
+								"txFo": "[\n    {\n        \"txcode\": \"#sys:fo-post-viewDataSQL\",\n        \"input\": {\n            \"learn_sql\": \"d_amlstmViewOne\"\n        }\n    }\n]",
+								"useAction": "false",
+								"icon": "view",
+								"color": "info",
+								"onTable": "apistatement",
+								"isMasterData": "false",
+								"tableMasterData": "",
+								"privateKeyTableMasterData": ""
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {
+								"danger": "",
+								"warning": ""
+							},
+							"validate": {},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cButton"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Details",
+			"des": "Note",
+			"class": "",
+			"lang": {},
+			"lang_des": {},
+			"codeHidden": "3e0965547cd2a137",
+			"inputtype": "cLayout",
+			"list_view": [
+				{
+					"code": "code",
+					"name": "View model",
+					"inputtype": "cView",
+					"isTab": "false",
+					"codeHidden": "f3b3574606ee5079",
+					"list_input": [
+						{
+							"default": {
+								"name": "Transaction reference",
+								"code": "transctionreference",
+								"codeHidden": "dae00cbe7b5d1fbd8",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.id",
+								"structable_read": "d_amlstm.id",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Transaction code",
+								"code": "txcode",
+								"codeHidden": "dae00cbe7db5d1ab8",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.txcode",
+								"structable_read": "d_amlstm.txcode",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Transaction date",
+								"code": "txdt",
+								"codeHidden": "eb785d6e83s3bf1e4",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.txdt",
+								"structable_read": "d_amlstm.txdt",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": "true"
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Transaction status",
+								"code": "sts",
+								"codeHidden": "6cc697528cad037f5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.sts",
+								"structable_read": "d_amlstm.sts",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Reference number",
+								"code": "uniqueno",
+								"codeHidden": "0145b1006ada28c0",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.uniqueno",
+								"structable_read": "d_amlstm.uniqueno",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Search name",
+								"code": "searchname",
+								"codeHidden": "c8cd31797f5a30d27",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.searchname",
+								"structable_read": "d_amlstm.searchname",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Customer code",
+								"code": "customercode",
+								"codeHidden": "c8cd31797faa5a30d27",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.customercode",
+								"structable_read": "d_amlstm.customercode",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Search ID",
+								"code": "searchid",
+								"codeHidden": "c8cd317ss97f5a30d27",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.searchid",
+								"structable_read": "d_amlstm.searchid",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Nationality/Residence",
+								"code": "searchcountry",
+								"codeHidden": "d438640b5f0sb40ab",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.searchcountry",
+								"structable_read": "d_amlstm.searchcountry",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Year of birth",
+								"code": "searchdo",
+								"codeHidden": "f696016934f93fc95",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.searchdob",
+								"structable_read": "d_amlstm.searchdob",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Username",
+								"code": "username",
+								"codeHidden": "2bee958f4dafafbaf",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.username",
+								"structable_read": "d_amlstm.username",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Brcode",
+								"code": "brcode",
+								"codeHidden": "9bc241af7b3f69ce7",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.brcode",
+								"structable_read": "d_amlstm.brcode",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Sysname",
+								"code": "sysname",
+								"codeHidden": "fcd253626173q96ea",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.sysname",
+								"structable_read": "d_amlstm.sysname",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Scan option",
+								"code": "scanoption",
+								"codeHidden": "47c439fd1f73190e8",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.scanoption",
+								"structable_read": "d_amlstm.scanoption",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Passport verify",
+								"code": "passportverify",
+								"codeHidden": "e6f1a129e5f7fq4db",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.passportverify",
+								"structable_read": "d_amlstm.passportverify",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Securityno1",
+								"code": "securityno1",
+								"codeHidden": "a90a03704e8b4ư316",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.securityno1",
+								"structable_read": "d_amlstm.securityno1",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Passexpirydtverify",
+								"code": "passexpirydtverify",
+								"codeHidden": "754c8fcb882fbd626",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.passexpirydtverify",
+								"structable_read": "d_amlstm.passexpirydtverify",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Passexpirydate",
+								"code": "passexpirydate",
+								"codeHidden": "f64a9f0481243f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.passexpirydate",
+								"structable_read": "d_amlstm.passexpirydate",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "securityno2",
+								"code": "securityno2",
+								"codeHidden": "f64a9f0482431f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.securityno2",
+								"structable_read": "d_amlstm.securityno2",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "riskfactors",
+								"code": "riskfactors",
+								"codeHidden": "f64a9f048243ef9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.riskfactors",
+								"structable_read": "d_amlstm.riskfactors",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "content",
+								"code": "content",
+								"codeHidden": "f64a9f048243f9fd5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.content",
+								"structable_read": "d_amlstm.content",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Return Hit",
+								"code": "rtnhit",
+								"codeHidden": "f64a9f048243cf9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.rtnhit",
+								"structable_read": "d_amlstm.rtnhit",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Scanid",
+								"code": "rtnscanid",
+								"codeHidden": "f64a9f048243vf9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.rtnscanid",
+								"structable_read": "d_amlstm.rtnscanid",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Encrypt Scanid",
+								"code": "rtnencryptscanid",
+								"codeHidden": "f64a9f04824s3f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.rtnencryptscanid",
+								"structable_read": "d_amlstm.rtnencryptscanid",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "frdt",
+								"code": "frdt",
+								"codeHidden": "f64a9f04824e3f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.frdt",
+								"structable_read": "d_amlstm.frdt",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "todt",
+								"code": "todt",
+								"codeHidden": "f64a9f0482ư43f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.todt",
+								"structable_read": "d_amlstm.todt",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},
+						{
+							"default": {
+								"name": "Transaction type",
+								"code": "txtype",
+								"codeHidden": "f64a9f048r243f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.txtype",
+								"structable_read": "d_amlstm.txtype",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						},{
+							"default": {
+								"name": "Return status",
+								"code": "rtnstatus",
+								"codeHidden": "f64a9f048r243f9d5",
+								"class": "col-xl-4 col-lg-4 col-md-6 col-sm-6 ",
+								"condition": "",
+								"ofgroup": "",
+								"class_ofgroup": "col-sm-12 col-md-12",
+								"role": ""
+							},
+							"config": {
+								"txFoActions": "",
+								"txFo": "",
+								"useAction": "true",
+								"is_upperCase": "false",
+								"action": "",
+								"structable": "d_amlstm.rtnstatus",
+								"structable_read": "d_amlstm.rtnstatus",
+								"data_default": "",
+								"isLookup": "false",
+								"callform": "",
+								"callform_detail": "",
+								"callform_detail_mode": "modal",
+								"data_view": "",
+								"data_value": "",
+								"is_password": "false",
+								"is_upper": "false"
+							},
+							"role": {
+								"visible": "",
+								"disabled": ""
+							},
+							"property": {},
+							"validate": {
+								"request": false
+							},
+							"lang": {},
+							"configAVD": {},
+							"inputtype": "cTextInput"
+						}
+					]
+				}
+			]
+		}
+	],
+	"react_txt": ""
+}
